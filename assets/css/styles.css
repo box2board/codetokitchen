@@ -1,0 +1,129 @@
+/* /assets/css/styles.css */
+:root{
+  --ink:#1d1d1b;
+  --paper:#f9f5ec;
+  --paper-edge:#efe8d6;
+  --accent:#d36b4e;
+  --accent-ink:#fff;
+  --muted:#6f6b63;
+  --shadow:0 6px 24px rgba(0,0,0,.12);
+  --radius:10px;
+  --card-radius:12px;
+  --max:1100px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(40% 60% at 20% 0%, #ffffff 0%, #f7f4ee 80%),
+    #faf8f2;
+  font: 16px/1.6 ui-sans-serif, -apple-system, system-ui, "Segoe UI", Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+/* layout */
+.wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
+.skip-link{
+  position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{left:12px; top:12px; width:auto; height:auto; background:#000; color:#fff; padding:8px 10px; border-radius:6px}
+
+/* header */
+.site-header{
+  background:#fff; border-bottom:1px solid #eee; position:sticky; top:0; z-index:4;
+  backdrop-filter:saturate(180%) blur(6px);
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; height:68px}
+.brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+.brand-mark{
+  display:grid; place-items:center; width:40px; height:40px; border-radius:50%;
+  background:var(--accent); color:var(--accent-ink); font-weight:800; letter-spacing:.5px;
+}
+.brand-text{display:flex; flex-direction:column; line-height:1.15}
+.brand-text strong{font-size:18px}
+.brand-text em{font-style:normal; color:var(--muted); font-size:12px}
+.nav{display:flex; gap:18px}
+.nav-link{color:var(--ink); text-decoration:none; font-weight:600}
+.nav-link:hover{color:var(--accent)}
+
+/* hero */
+.hero{position:relative; padding:56px 0 40px; background:linear-gradient(180deg,#fff 0,#fff 70%,transparent)}
+.hero-box{
+  background:var(--paper) url("../img/paper.svg");
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid #e7dfcf;
+  padding:28px;
+}
+.hero h1{margin:0 0 10px; font-size:clamp(26px,3vw,36px)}
+.hero p{margin:0 0 18px; color:var(--muted)}
+.cta-row{display:flex; gap:12px; flex-wrap:wrap}
+.btn{
+  appearance:none; border:0; cursor:pointer;
+  padding:10px 16px; border-radius:999px; font-weight:700; letter-spacing:.2px;
+  background:var(--accent); color:var(--accent-ink); text-decoration:none; display:inline-block;
+}
+.btn:hover{filter:brightness(.95)}
+.btn-ghost{background:transparent; color:var(--accent); border:1.5px solid var(--accent)}
+.paper-edge{height:14px; background:var(--paper-edge); border-top:1px dashed #d9d1bf}
+
+/* filter chips */
+.filter-bar{display:flex; gap:8px; flex-wrap:wrap; margin:26px 0 18px}
+.chip{
+  padding:8px 12px; border-radius:999px; border:1px solid #d9d1bf; background:#fff; color:#5b574f;
+  font-weight:600; cursor:pointer;
+}
+.chip.active, .chip:hover{background:var(--accent); border-color:var(--accent); color:#fff}
+
+/* grid */
+.grid{
+  display:grid; gap:18px;
+  grid-template-columns:repeat(1,minmax(0,1fr));
+}
+@media (min-width:700px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ .grid{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+
+/* recipe card — vintage index card feel */
+.recipe-card{
+  background:
+    url("../img/paper.svg"),
+    var(--paper);
+  border:1px solid #e7dfcf;
+  border-radius:var(--card-radius);
+  box-shadow:var(--shadow);
+  padding:18px 18px 12px;
+  position:relative;
+  overflow:hidden;
+}
+.recipe-card::before{
+  /* red margin line like a notebook card */
+  content:"";
+  position:absolute; left:54px; top:0; bottom:0; width:2px; background:#e7b1a2; opacity:.65;
+}
+.card-head{display:flex; align-items:baseline; justify-content:space-between; gap:8px}
+.card-head h2{font-family:ui-serif, Georgia, "Times New Roman", serif; font-weight:800; font-size:20px; margin:0}
+.category-tag{background:#e8e3d7; border:1px solid #d9d1bf; border-radius:6px; padding:2px 8px; font-size:12px; color:#6b665e}
+.blurb{margin:8px 0 14px; color:#555}
+
+.cols{display:grid; gap:16px; grid-template-columns:1fr}
+@media (min-width:720px){ .cols{ grid-template-columns:1fr 1fr; } }
+
+.recipe-card h3{
+  font-family:ui-serif, Georgia, "Times New Roman", serif; font-weight:700; font-size:15px; margin:0 0 6px;
+  color:#3a372f;
+}
+.recipe-card ul, .recipe-card ol{margin:0; padding-left:18px}
+.recipe-card li{margin:3px 0}
+.card-foot{margin-top:12px}
+.text-link{color:var(--accent); text-underline-offset:2px; font-weight:700}
+
+/* about + footer */
+.about{padding:42px 0 64px}
+.about p{color:var(--muted)}
+.site-footer{border-top:1px solid #eee; padding:22px 0; background:#fff}
+.site-footer small{color:#7c786f}
+
+/* tiny utilities */
+.visually-hidden{position:absolute; left:-9999px}
+
+/* images & textures */
