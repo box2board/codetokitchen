@@ -2,133 +2,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Code to Kitchen</title>
-  <meta name="description" content="AI-inspired recipes, tips, and tools for real-life cooking.">
-  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
-  <link rel="canonical" href="/index.html">
-  <meta property="og:title" content="Home | Code to Kitchen">
-  <meta property="og:description" content="AI-inspired recipes, tips, and tools for real-life cooking.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/img/og-image.jpg">
-  <meta property="og:url" content="/index.html">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <script defer src="/assets/js/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code to Kitchen — Vintage Recipe Cards</title>
+  <meta name="description" content="Vintage-style recipe cards for modern home cooks. Browse desserts, sandwiches, chicken, steak, and appetizers." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/ck-mark.svg" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+  <meta property="og:title" content="Code to Kitchen — Vintage Recipe Cards" />
+  <meta property="og:description" content="Old-fashioned recipe cards with clean, modern UX." />
+  <meta property="og:type" content="website" />
 </head>
 <body>
-<header>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="nav-container">
-    <div class="logo">
-      <img src="/assets/img/logo.svg" alt="Code to Kitchen logo">
-      <span>Code to Kitchen</span>
+  <a class="skip-link" href="#recipes">Skip to recipes</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">CK</span>
+        <span class="brand-text">
+          <strong>Code to Kitchen</strong>
+          <em>Tested • Tasty • Timeless</em>
+        </span>
+      </a>
+      <nav class="nav">
+        <!-- these will become real pages later -->
+        <a class="nav-link" href="recipes/index.html">All Recipes</a>
+        <a class="nav-link" href="tips.html">Tips</a>
+        <a class="nav-link" href="products.html">Tools</a>
+      </nav>
     </div>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/tips.html">Tips</a>
-      <a href="/products.html">Products</a>
-      <a href="/recipes/index.html">Recipes</a>
-    </nav>
-  </div>
-</header>
-<main id="main-content">
-  <section class="hero">
-    <h1>AI-inspired recipes, tips, and tools for real-life cooking</h1>
-    <p>Code to Kitchen turns AI brainstorming into practical cooking. Every recipe starts with an AI idea, then gets real-world tested and simplified for busy home cooks. You’ll find quick tips, smart tools we actually use, and approachable recipes with optional ‘AI twists’ to experiment with.</p>
-    <a href="/tips.html" class="btn">Explore Tips</a>
-    <a href="/products.html" class="btn">Shop Tools</a>
-    <a href="/recipes/index.html" class="btn">View Recipes</a>
-  </section>
-  <section>
-    <h2 class="section-title">Latest from the Kitchen</h2>
-    <h3>Tips</h3>
-    <div class="grid grid-3">
-      <div class="card">
-        <div class="card-content">
-          <h3>Salt early and often</h3>
-          <p>Season foods in stages to build layers of flavor.</p>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-box">
+          <h1>Vintage recipe cards for the modern cook.</h1>
+          <p>Each card keeps it simple: a short intro, an ingredient list you can shop in one trip, and step-by-step instructions—styled like the recipe box your grandma loved.</p>
+          <div class="cta-row">
+            <a class="btn" href="#recipes">Browse recipes</a>
+            <a class="btn btn-ghost" href="tips.html">Kitchen tips</a>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>Bring proteins to room temp</h3>
-          <p>Let meat sit 15–20 min before cooking for even doneness.</p>
+      <div class="paper-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- Filters -->
+    <section id="recipes" class="recipes-section">
+      <div class="wrap">
+        <div class="filter-bar" role="tablist" aria-label="Recipe categories">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="desserts" role="tab">Desserts</button>
+          <button class="chip" data-filter="sandwiches" role="tab">Sandwiches</button>
+          <button class="chip" data-filter="chicken" role="tab">Chicken</button>
+          <button class="chip" data-filter="steak" role="tab">Steak</button>
+          <button class="chip" data-filter="appetizers" role="tab">Appetizers</button>
+        </div>
+
+        <!-- Recipe grid (old-fashioned cards) -->
+        <div class="grid">
+
+          <!-- DESSERTS -->
+          <article class="recipe-card desserts" data-category="desserts">
+            <header class="card-head">
+              <h2>Classic Chocolate Chip Cookies</h2>
+              <span class="category-tag">Desserts</span>
+            </header>
+            <p class="blurb">Crisp edges, chewy middles—house favorite in under 30 minutes.</p>
+            <div class="cols">
+              <section aria-label="Ingredients">
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>2¼ c all-purpose flour</li>
+                  <li>½ tsp baking soda</li>
+                  <li>¾ c unsalted butter, melted & cooled</li>
+                  <li>1 c brown sugar + ½ c white</li>
+                  <li>1 egg + 1 yolk</li>
+                  <li>1 tsp vanilla • ½ tsp salt</li>
+                  <li>1½ c chocolate chips</li>
+                </ul>
+              </section>
+              <section aria-label="Instructions">
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Heat oven to 350°F (175°C); line 2 sheets.</li>
+                  <li>Whisk flour + soda + salt. In another bowl, whisk butter & sugars; beat in egg, yolk, vanilla.</li>
+                  <li>Fold dry into wet; stir in chips. Scoop 2 tbsp mounds.</li>
+                  <li>Bake 9–11 min; cool on sheet 5 min.</li>
+                </ol>
+              </section>
+            </div>
+            <footer class="card-foot">
+              <a class="text-link" href="recipes/chocolate-chip-cookies.html">Open full card →</a>
+            </footer>
+          </article>
+
+          <!-- SANDWICHES -->
+          <article class="recipe-card sandwiches" data-category="sandwiches">
+            <header class="card-head">
+              <h2>Caprese Grilled Cheese</h2>
+              <span class="category-tag">Sandwiches</span>
+            </header>
+            <p class="blurb">Tomato, basil, and melty mozz with a garlicky butter crust.</p>
+            <div class="cols">
+              <section>
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>4 slices country bread</li>
+                  <li>6 oz fresh mozzarella</li>
+                  <li>1 tomato, sliced • basil leaves</li>
+                  <li>1 tbsp butter • 1 tsp olive oil</li>
+                  <li>Pinch salt & pepper</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Heat skillet med-low. Butter outer sides of bread.</li>
+                  <li>Layer mozz, tomato, basil; season.</li>
+                  <li>Grill 3–4 min/side to deep golden and gooey.</li>
+                </ol>
+              </section>
+            </div>
+            <footer class="card-foot">
+              <a class="text-link" href="recipes/caprese-grilled-cheese.html">Open full card →</a>
+            </footer>
+          </article>
+
+          <!-- CHICKEN -->
+          <article class="recipe-card chicken" data-category="chicken">
+            <header class="card-head">
+              <h2>Sheet-Pan Lemon Herb Chicken</h2>
+              <span class="category-tag">Chicken</span>
+            </header>
+            <p class="blurb">Roasted thighs with potatoes & green beans—tangy, garlicky, weeknight-easy.</p>
+            <div class="cols">
+              <section>
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>6 bone-in chicken thighs</li>
+                  <li>1 lb baby potatoes, halved</li>
+                  <li>8 oz green beans • 3 carrots</li>
+                  <li>1 lemon (zest + juice) • 4 garlic</li>
+                  <li>3 tbsp olive oil • oregano • thyme</li>
+                  <li>Salt & pepper</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Heat oven 425°F (220°C). Toss veg w/ half oil & herbs.</li>
+                  <li>Rub chicken w/ remaining oil, zest, garlic, herbs; season.</li>
+                  <li>Roast 35–40 min; finish with lemon juice.</li>
+                </ol>
+              </section>
+            </div>
+            <footer class="card-foot">
+              <a class="text-link" href="recipes/sheet-pan-lemon-herb-chicken.html">Open full card →</a>
+            </footer>
+          </article>
+
+          <!-- STEAK -->
+          <article class="recipe-card steak" data-category="steak">
+            <header class="card-head">
+              <h2>Cast-Iron Garlic Butter Steak</h2>
+              <span class="category-tag">Steak</span>
+            </header>
+            <p class="blurb">Sear, baste, rest—restaurant results at home.</p>
+            <div class="cols">
+              <section>
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>1 ribeye or NY strip (1–1½″)</li>
+                  <li>1 tbsp neutral oil</li>
+                  <li>2 tbsp butter • 2 garlic • thyme</li>
+                  <li>Kosher salt & pepper</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Pat steak dry; season aggressively.</li>
+                  <li>Sear 2–3 min/side in hot skillet with oil.</li>
+                  <li>Add butter, garlic, thyme; baste 1–2 min. Rest 5 min.</li>
+                </ol>
+              </section>
+            </div>
+            <footer class="card-foot">
+              <a class="text-link" href="recipes/garlic-butter-steak.html">Open full card →</a>
+            </footer>
+          </article>
+
+          <!-- APPETIZERS -->
+          <article class="recipe-card appetizers" data-category="appetizers">
+            <header class="card-head">
+              <h2>Whipped Feta & Honey Dip</h2>
+              <span class="category-tag">Appetizers</span>
+            </header>
+            <p class="blurb">Salty-sweet, tangy, and dangerously snackable.</p>
+            <div class="cols">
+              <section>
+                <h3>Ingredients</h3>
+                <ul>
+                  <li>8 oz feta • ¼ c Greek yogurt</li>
+                  <li>1–2 tbsp olive oil</li>
+                  <li>1–2 tsp honey • pepper</li>
+                  <li>Optional: lemon zest, chili flakes</li>
+                </ul>
+              </section>
+              <section>
+                <h3>Instructions</h3>
+                <ol>
+                  <li>Blend feta, yogurt, oil until silky.</li>
+                  <li>Swirl in honey, pepper; top as desired.</li>
+                </ol>
+              </section>
+            </div>
+            <footer class="card-foot">
+              <a class="text-link" href="recipes/whipped-feta.html">Open full card →</a>
+            </footer>
+          </article>
+
         </div>
       </div>
-      <div class="card">
-        <div class="card-content">
-          <h3>Pan sauce 101</h3>
-          <p>Deglaze with stock and finish with butter for a quick sauce.</p>
-        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="wrap">
+        <h2>What is Code to Kitchen?</h2>
+        <p>We turn AI brainstorming into practical cooking. These “old-fashioned” cards keep things human: concise intros, clear lists, and steps that actually work—styled like a recipe box you’ll want to keep.</p>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2025 Code to Kitchen. As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
-    <h3>Products</h3>
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="/assets/img/placeholder-1.jpg" alt="8” Chef’s Knife image" loading="lazy">
-        <div class="card-content">
-          <h3>8” Chef’s Knife</h3>
-          <p>Versatile and essential for everyday prep.</p>
-          <a href="#" class="btn" rel="sponsored nofollow">View Product</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/img/placeholder-2.jpg" alt="Instant-Read Thermometer image" loading="lazy">
-        <div class="card-content">
-          <h3>Instant-Read Thermometer</h3>
-          <p>Check doneness without cutting open your meat.</p>
-          <a href="#" class="btn" rel="sponsored nofollow">View Product</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/img/placeholder-3.jpg" alt="Cast Iron Skillet (10–12”) image" loading="lazy">
-        <div class="card-content">
-          <h3>Cast Iron Skillet (10–12”)</h3>
-          <p>Retains heat and sears beautifully.</p>
-          <a href="#" class="btn" rel="sponsored nofollow">View Product</a>
-        </div>
-      </div>
-    </div>
-    <h3>Recipes</h3>
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="/assets/img/placeholder-1.jpg" alt="Sheet-Pan Lemon Herb Chicken & Veggies image" loading="lazy">
-        <div class="card-content">
-          <h3>Sheet-Pan Lemon Herb Chicken & Veggies</h3>
-          <p>Weeknight-friendly chicken thighs with potatoes, carrots, and green beans, roasted with lemon, garlic, and herbs.</p>
-          <a href="/recipes/sheet-pan-lemon-herb-chicken.html" class="btn">Make Recipe</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/img/placeholder-2.jpg" alt="One-Pot Creamy Tomato Basil Pasta image" loading="lazy">
-        <div class="card-content">
-          <h3>One-Pot Creamy Tomato Basil Pasta</h3>
-          <p>Pantry pasta where noodles simmer directly in a garlicky tomato broth finished with cream and basil.</p>
-          <a href="/recipes/one-pot-creamy-tomato-basil-pasta.html" class="btn">Make Recipe</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="/assets/img/placeholder-3.jpg" alt="Crispy Air-Fryer Honey-Chili Salmon image" loading="lazy">
-        <div class="card-content">
-          <h3>Crispy Air-Fryer Honey-Chili Salmon</h3>
-          <p>Sticky-sweet heat with shatter-edged salmon, done in minutes.</p>
-          <a href="/recipes/air-fryer-honey-chili-salmon.html" class="btn">Make Recipe</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <h3>Subscribe for updates</h3>
-    <form>
-      <input type="email" placeholder="Enter your email" aria-label="Email address">
-      <button type="submit" class="btn">Subscribe</button>
-    </form>
-  </section>
-</main>
-<footer class="footer">
-  <small>© 2025 Code to Kitchen. All rights reserved.</small>
-  <small>As an Amazon Associate, we earn from qualifying purchases.</small>
-</footer>
+  </footer>
 </body>
 </html>
