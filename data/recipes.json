@@ -7,11 +7,20 @@
     "image": "/assets/img/ck-mark.svg",
     "category": "chicken",
     "categoryLabel": "Chicken",
-    "tags": ["weeknight", "sheet-pan"],
+    "tags": [
+      "weeknight",
+      "sheet-pan"
+    ],
     "date": "2024-10-02",
     "totalTime": "55 min",
     "difficulty": "Easy",
-    "ingredients": ["chicken thighs", "potatoes", "green beans", "lemon", "garlic"]
+    "ingredients": [
+      "chicken thighs",
+      "potatoes",
+      "green beans",
+      "lemon",
+      "garlic"
+    ]
   },
   {
     "id": "air-fryer-honey-chili-salmon",
@@ -21,11 +30,19 @@
     "image": "/assets/img/ck-mark.svg",
     "category": "seafood",
     "categoryLabel": "Seafood",
-    "tags": ["air-fryer", "quick"],
+    "tags": [
+      "air-fryer",
+      "quick"
+    ],
     "date": "2024-10-10",
     "totalTime": "19 min",
     "difficulty": "Easy",
-    "ingredients": ["salmon", "honey", "soy sauce", "chili crisp"]
+    "ingredients": [
+      "salmon",
+      "honey",
+      "soy sauce",
+      "chili crisp"
+    ]
   },
   {
     "id": "one-pot-creamy-tomato-basil-pasta",
@@ -35,11 +52,19 @@
     "image": "/assets/img/ck-mark.svg",
     "category": "pasta",
     "categoryLabel": "Pasta",
-    "tags": ["one-pot", "weeknight"],
+    "tags": [
+      "one-pot",
+      "weeknight"
+    ],
     "date": "2024-09-20",
     "totalTime": "28 min",
     "difficulty": "Easy",
-    "ingredients": ["spaghetti", "tomatoes", "cream", "basil"]
+    "ingredients": [
+      "spaghetti",
+      "tomatoes",
+      "cream",
+      "basil"
+    ]
   },
   {
     "id": "fifteen-minute-veggie-fried-rice",
@@ -49,11 +74,19 @@
     "image": "/assets/img/ck-mark.svg",
     "category": "rice",
     "categoryLabel": "Rice",
-    "tags": ["quick", "vegetarian"],
+    "tags": [
+      "quick",
+      "vegetarian"
+    ],
     "date": "2024-09-12",
     "totalTime": "15 min",
     "difficulty": "Easy",
-    "ingredients": ["rice", "eggs", "mixed vegetables", "soy sauce"]
+    "ingredients": [
+      "rice",
+      "eggs",
+      "mixed vegetables",
+      "soy sauce"
+    ]
   },
   {
     "id": "no-knead-skillet-garlic-bread",
@@ -63,10 +96,1180 @@
     "image": "/assets/img/ck-mark.svg",
     "category": "bread",
     "categoryLabel": "Bread",
-    "tags": ["make-ahead", "weeknight"],
+    "tags": [
+      "make-ahead",
+      "weeknight"
+    ],
     "date": "2024-09-05",
     "totalTime": "120 min",
     "difficulty": "Easy",
-    "ingredients": ["flour", "yeast", "garlic", "butter"]
+    "ingredients": [
+      "flour",
+      "yeast",
+      "garlic",
+      "butter"
+    ]
+  },
+  {
+    "id": "r001",
+    "title": "Garlic Butter Skillet Chicken",
+    "slug": "garlic-butter-skillet-chicken",
+    "description": "Juicy skillet-seared chicken with a quick garlic-butter pan sauce.",
+    "category": "chicken",
+    "tags": [
+      "skillet",
+      "weeknight",
+      "gluten-free",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 18,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "4 boneless, skinless chicken breasts (or thighs)",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1 tsp paprika",
+      "1 tbsp olive oil",
+      "3 tbsp unsalted butter",
+      "4 cloves garlic, minced",
+      "1/2 cup chicken broth",
+      "1 tsp dried thyme (or Italian seasoning)",
+      "1 tbsp lemon juice (optional)",
+      "1 tbsp chopped parsley (optional)"
+    ],
+    "instructions": [
+      "Pat chicken dry. Season both sides with salt, pepper, and paprika.",
+      "Heat olive oil in a large skillet over medium-high heat.",
+      "Add chicken and sear 5\u20136 minutes per side (depending on thickness) until browned and cooked through. Transfer to a plate.",
+      "Reduce heat to medium. Add butter; once melted, stir in garlic and cook 30 seconds until fragrant.",
+      "Pour in chicken broth and thyme. Scrape up browned bits and simmer 2\u20133 minutes to slightly reduce.",
+      "Stir in lemon juice (optional). Return chicken to the skillet and spoon sauce over the top for 1\u20132 minutes.",
+      "Garnish with parsley and serve."
+    ],
+    "notes": [
+      "If your chicken breasts are thick, pound to even thickness for faster, juicier cooking.",
+      "Great with rice, mashed potatoes, or roasted vegetables."
+    ],
+    "nutrition": "Nutrition will vary by cut of chicken and serving size. Estimates are approximate.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-02",
+    "categoryLabel": "Chicken",
+    "totalTime": "28 min",
+    "date": "2026-01-02",
+    "url": "/recipes/recipe.html?id=r001"
+  },
+  {
+    "id": "r002",
+    "title": "Honey Chipotle Chicken Bowls",
+    "slug": "honey-chipotle-chicken-bowls",
+    "description": "Sweet-heat chicken bowls with rice and fresh toppings\u2014meal-prep friendly.",
+    "category": "chicken",
+    "tags": [
+      "meal-prep",
+      "spicy",
+      "bowls",
+      "medium"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 1/2 lbs boneless chicken thighs (or breasts)",
+      "1/3 cup honey",
+      "2 tbsp chipotle sauce (or 1\u20132 chipotle peppers in adobo, minced)",
+      "1 tbsp olive oil",
+      "1 tsp smoked paprika",
+      "1/2 tsp cumin",
+      "1/2 tsp garlic powder",
+      "1 tsp kosher salt",
+      "1 tbsp lime juice",
+      "2 cups cooked rice (for serving)",
+      "1 can (15 oz) black beans, drained and rinsed (for serving)",
+      "1 1/2 cups corn (frozen or canned, drained) (for serving)",
+      "Toppings: diced avocado, pico de gallo, chopped cilantro, sliced jalape\u00f1os (optional)"
+    ],
+    "instructions": [
+      "Whisk honey, chipotle, olive oil, paprika, cumin, garlic powder, salt, and lime juice.",
+      "Toss chicken in the sauce and let sit 10 minutes (or up to 1 hour).",
+      "Heat a skillet over medium-high heat. Cook chicken 6\u20137 minutes per side (or until 165\u00b0F).",
+      "Rest 5 minutes, then slice.",
+      "Assemble bowls: rice, beans, corn, sliced chicken, and your favorite toppings."
+    ],
+    "notes": [
+      "For extra char, broil cooked chicken for 1\u20132 minutes after slicing.",
+      "Make it milder by using chipotle sauce instead of whole peppers."
+    ],
+    "nutrition": "Nutrition is estimated and depends on bowl components and portion size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-03",
+    "categoryLabel": "Chicken",
+    "totalTime": "30 min",
+    "date": "2026-01-03",
+    "url": "/recipes/recipe.html?id=r002"
+  },
+  {
+    "id": "r003",
+    "title": "One-Pan Lemon Herb Salmon",
+    "slug": "one-pan-lemon-herb-salmon",
+    "description": "Bright, simple salmon baked on one pan\u2014minimal cleanup, maximum flavor.",
+    "category": "seafood",
+    "tags": [
+      "one-pan",
+      "healthy",
+      "gluten-free",
+      "easy"
+    ],
+    "prepMinutes": 8,
+    "cookMinutes": 14,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "4 salmon fillets (5\u20136 oz each)",
+      "2 tbsp olive oil",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "2 cloves garlic, minced",
+      "1 tsp dried dill (or Italian seasoning)",
+      "1 lemon, thinly sliced",
+      "Optional: 1 tbsp capers or chopped parsley"
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F (205\u00b0C). Line a sheet pan with parchment.",
+      "Place salmon on the pan. Drizzle with olive oil and season with salt and pepper.",
+      "Sprinkle garlic and dill over the top and lay lemon slices across the fillets.",
+      "Bake 12\u201315 minutes, until salmon flakes easily with a fork.",
+      "Finish with capers or parsley if using, and serve."
+    ],
+    "notes": [
+      "If your fillets are thin, start checking at 10 minutes.",
+      "Serve with roasted asparagus or a simple salad."
+    ],
+    "nutrition": "Nutrition is estimated and depends on salmon size and oil used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-04",
+    "categoryLabel": "Seafood",
+    "totalTime": "22 min",
+    "date": "2026-01-04",
+    "url": "/recipes/recipe.html?id=r003"
+  },
+  {
+    "id": "r004",
+    "title": "Slow Cooker Beef Barbacoa",
+    "slug": "slow-cooker-beef-barbacoa",
+    "description": "Fork-tender shredded beef with smoky spices\u2014perfect for tacos and bowls.",
+    "category": "beef",
+    "tags": [
+      "slow-cooker",
+      "tacos",
+      "meal-prep",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 480,
+    "servings": 8,
+    "difficulty": "Easy",
+    "ingredients": [
+      "3 lbs beef chuck roast",
+      "1 onion, sliced",
+      "4 cloves garlic, minced",
+      "2 chipotle peppers in adobo, minced (plus 1 tbsp adobo sauce)",
+      "1/2 cup beef broth",
+      "2 tbsp apple cider vinegar",
+      "2 tbsp lime juice",
+      "1 tbsp cumin",
+      "1 tbsp dried oregano",
+      "2 tsp kosher salt",
+      "1 tsp black pepper",
+      "Optional: 1 bay leaf"
+    ],
+    "instructions": [
+      "Place onion in the bottom of a slow cooker. Add the roast on top.",
+      "Add garlic, chipotle peppers, adobo sauce, broth, vinegar, lime juice, cumin, oregano, salt, pepper, and bay leaf (optional).",
+      "Cook on LOW for 8 hours (or HIGH for 4\u20135 hours) until very tender.",
+      "Shred beef with two forks and stir back into the juices.",
+      "Serve in tacos, burrito bowls, or sandwiches."
+    ],
+    "notes": [
+      "For less heat, use 1 chipotle pepper instead of 2.",
+      "Leftovers freeze well for up to 2 months."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cut of beef and serving size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-05",
+    "categoryLabel": "Beef",
+    "totalTime": "495 min",
+    "date": "2026-01-05",
+    "url": "/recipes/recipe.html?id=r004"
+  },
+  {
+    "id": "r005",
+    "title": "Creamy Tuscan Chicken",
+    "slug": "creamy-tuscan-chicken",
+    "description": "Creamy garlic sauce with sun-dried tomatoes and spinach\u2014restaurant vibes at home.",
+    "category": "chicken",
+    "tags": [
+      "skillet",
+      "creamy",
+      "comfort-food",
+      "medium"
+    ],
+    "prepMinutes": 12,
+    "cookMinutes": 22,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      "4 boneless, skinless chicken breasts",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1 tbsp olive oil",
+      "2 tbsp butter",
+      "3 cloves garlic, minced",
+      "1/2 cup chicken broth",
+      "1 cup heavy cream",
+      "1/2 cup grated Parmesan",
+      "1/2 cup sun-dried tomatoes, sliced",
+      "2 cups baby spinach",
+      "1/2 tsp Italian seasoning"
+    ],
+    "instructions": [
+      "Season chicken with salt and pepper.",
+      "Heat olive oil in a skillet over medium-high heat. Sear chicken 5\u20136 minutes per side until cooked through; remove.",
+      "Reduce heat to medium. Add butter and garlic; cook 30 seconds.",
+      "Pour in broth, then add cream, Parmesan, Italian seasoning, and sun-dried tomatoes. Simmer 3\u20135 minutes until slightly thickened.",
+      "Stir in spinach to wilt. Return chicken to the pan and spoon sauce over top for 2 minutes.",
+      "Serve hot."
+    ],
+    "notes": [
+      "Swap heavy cream for half-and-half for a lighter sauce (it will be thinner).",
+      "Great over pasta, rice, or mashed potatoes."
+    ],
+    "nutrition": "Nutrition is estimated and will vary by cream/cheese amounts.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-06",
+    "categoryLabel": "Chicken",
+    "totalTime": "34 min",
+    "date": "2026-01-06",
+    "url": "/recipes/recipe.html?id=r005"
+  },
+  {
+    "id": "r006",
+    "title": "Vegetarian Stuffed Bell Peppers",
+    "slug": "vegetarian-stuffed-bell-peppers",
+    "description": "Hearty, colorful peppers stuffed with rice, beans, corn, and melty cheese.",
+    "category": "vegetarian",
+    "tags": [
+      "meatless",
+      "meal-prep",
+      "gluten-free",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 35,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "4 large bell peppers",
+      "1 cup cooked rice",
+      "1 can (15 oz) black beans, drained and rinsed",
+      "1 cup corn (frozen or canned, drained)",
+      "1 cup salsa",
+      "1 tsp cumin",
+      "1/2 tsp chili powder",
+      "1/2 tsp kosher salt",
+      "1 cup shredded cheese (cheddar or Mexican blend)",
+      "Optional: chopped cilantro, sour cream, sliced green onions"
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F (190\u00b0C).",
+      "Slice tops off peppers and remove seeds. Place peppers upright in a baking dish.",
+      "In a bowl, mix rice, beans, corn, salsa, cumin, chili powder, salt, and 1/2 cup cheese.",
+      "Fill peppers and top with remaining cheese.",
+      "Add a splash of water to the bottom of the dish. Cover with foil and bake 25 minutes.",
+      "Uncover and bake 10 more minutes until peppers are tender and cheese is bubbly."
+    ],
+    "notes": [
+      "Use quinoa instead of rice for extra protein.",
+      "If peppers won\u2019t stand, slice a thin piece off the bottom to level them."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cheese and portion size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-07",
+    "categoryLabel": "Vegetarian",
+    "totalTime": "50 min",
+    "date": "2026-01-07",
+    "url": "/recipes/recipe.html?id=r006"
+  },
+  {
+    "id": "r007",
+    "title": "Shrimp Scampi Pasta",
+    "slug": "shrimp-scampi-pasta",
+    "description": "Garlic-butter shrimp tossed with lemony pasta\u2014fast and classic.",
+    "category": "seafood",
+    "tags": [
+      "pasta",
+      "weeknight",
+      "comfort-food",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "12 oz spaghetti or linguine",
+      "1 lb large shrimp, peeled and deveined",
+      "1 tsp kosher salt (divided)",
+      "1/2 tsp black pepper",
+      "2 tbsp olive oil",
+      "3 tbsp butter",
+      "4 cloves garlic, minced",
+      "1/2 tsp red pepper flakes (optional)",
+      "1/2 cup dry white wine (or chicken broth)",
+      "Juice of 1 lemon",
+      "1/4 cup chopped parsley",
+      "1/4 cup reserved pasta water"
+    ],
+    "instructions": [
+      "Cook pasta in salted water until al dente. Reserve 1/4 cup pasta water and drain.",
+      "Season shrimp with 1/2 tsp salt and pepper.",
+      "Heat olive oil and 1 tbsp butter in a skillet over medium-high heat. Sear shrimp 2 minutes per side; remove.",
+      "Add remaining butter, garlic, and red pepper flakes; cook 30 seconds.",
+      "Pour in wine (or broth) and lemon juice. Simmer 2 minutes.",
+      "Add pasta, reserved pasta water, and shrimp; toss to coat. Stir in parsley and serve."
+    ],
+    "notes": [
+      "Don\u2019t overcook shrimp\u2014remove as soon as they turn pink and firm.",
+      "Add a handful of spinach at the end for an easy veggie boost."
+    ],
+    "nutrition": "Nutrition is estimated and depends on pasta portion and butter used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-08",
+    "categoryLabel": "Seafood",
+    "totalTime": "25 min",
+    "date": "2026-01-08",
+    "url": "/recipes/recipe.html?id=r007"
+  },
+  {
+    "id": "r008",
+    "title": "Pulled Pork Sliders with Coleslaw",
+    "slug": "pulled-pork-sliders-with-coleslaw",
+    "description": "Tender pulled pork piled on soft buns with crunchy slaw\u2014tailgate-ready.",
+    "category": "tailgate",
+    "tags": [
+      "slow-cooker",
+      "game-day",
+      "crowd-pleaser",
+      "easy"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 480,
+    "servings": 12,
+    "difficulty": "Easy",
+    "ingredients": [
+      "3\u20134 lbs pork shoulder (butt)",
+      "2 tsp kosher salt",
+      "1 tsp black pepper",
+      "2 tsp smoked paprika",
+      "1 tsp garlic powder",
+      "1/2 cup chicken broth",
+      "1 cup BBQ sauce (plus more for serving)",
+      "12 slider buns",
+      "2 cups prepared coleslaw (store-bought or homemade)",
+      "Optional: pickles"
+    ],
+    "instructions": [
+      "Season pork with salt, pepper, paprika, and garlic powder.",
+      "Place pork in a slow cooker and add chicken broth.",
+      "Cook on LOW 8 hours (or HIGH 5\u20136 hours) until shreddable.",
+      "Shred pork and stir in BBQ sauce. Keep warm.",
+      "Assemble sliders with pulled pork, coleslaw, and pickles if using."
+    ],
+    "notes": [
+      "For crispier edges, broil shredded pork on a sheet pan for 5 minutes before saucing.",
+      "Leftovers make great nachos, baked potatoes, or quesadillas."
+    ],
+    "nutrition": "Nutrition is estimated and depends on bun size and sauce amount.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-09",
+    "categoryLabel": "Tailgate",
+    "totalTime": "500 min",
+    "date": "2026-01-09",
+    "url": "/recipes/recipe.html?id=r008"
+  },
+  {
+    "id": "r009",
+    "title": "Buffalo Chicken Dip",
+    "slug": "buffalo-chicken-dip",
+    "description": "Creamy, spicy, and dangerously scoopable\u2014perfect for parties.",
+    "category": "tailgate",
+    "tags": [
+      "dip",
+      "game-day",
+      "crowd-pleaser",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 20,
+    "servings": 10,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 cups cooked shredded chicken (rotisserie works great)",
+      "8 oz cream cheese, softened",
+      "1/2 cup buffalo sauce",
+      "1/2 cup ranch dressing (or blue cheese dressing)",
+      "1 cup shredded cheddar (or mozzarella)",
+      "2 tbsp sliced green onions (optional)"
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F (190\u00b0C).",
+      "Mix chicken, cream cheese, buffalo sauce, ranch, and 3/4 cup cheese until combined.",
+      "Spread into a small baking dish and top with remaining cheese.",
+      "Bake 18\u201322 minutes until hot and bubbly.",
+      "Top with green onions if using. Serve with chips, celery, or toasted bread."
+    ],
+    "notes": [
+      "Make it extra spicy by adding a pinch of cayenne.",
+      "This reheats well in the microwave in 30-second bursts."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cheese/dressing used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-10",
+    "categoryLabel": "Tailgate",
+    "totalTime": "30 min",
+    "date": "2026-01-10",
+    "url": "/recipes/recipe.html?id=r009"
+  },
+  {
+    "id": "r010",
+    "title": "Loaded Nacho Sheet Pan",
+    "slug": "loaded-nacho-sheet-pan",
+    "description": "A full-pan nacho situation with seasoned beef, melted cheese, and fresh toppings.",
+    "category": "tailgate",
+    "tags": [
+      "sheet-pan",
+      "game-day",
+      "crowd-pleaser",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "servings": 6,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 large bag tortilla chips",
+      "1 lb ground beef",
+      "1 packet taco seasoning",
+      "1/3 cup water",
+      "2 cups shredded cheese",
+      "1/2 cup black beans (optional), drained and rinsed",
+      "1/2 cup diced tomatoes or pico de gallo",
+      "Sliced jalape\u00f1os (optional)",
+      "Toppings: sour cream, salsa, guacamole, chopped cilantro"
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F (205\u00b0C).",
+      "Brown ground beef in a skillet. Add taco seasoning and water; simmer 2 minutes.",
+      "Spread chips on a sheet pan. Sprinkle beef, beans (optional), and cheese evenly over top.",
+      "Bake 8\u201310 minutes until cheese melts.",
+      "Top with tomatoes, jalape\u00f1os, and your favorite toppings. Serve immediately."
+    ],
+    "notes": [
+      "For best crunch, serve cold toppings on the side and add as you eat.",
+      "Swap beef for shredded chicken or black beans for a meatless version."
+    ],
+    "nutrition": "Nutrition is estimated and varies with toppings and chip amount.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-11",
+    "categoryLabel": "Tailgate",
+    "totalTime": "30 min",
+    "date": "2026-01-11",
+    "url": "/recipes/recipe.html?id=r010"
+  },
+  {
+    "id": "r011",
+    "title": "BBQ Bacon Meatballs",
+    "slug": "bbq-bacon-meatballs",
+    "description": "Juicy meatballs wrapped in bacon and finished with a sticky BBQ glaze.",
+    "category": "tailgate",
+    "tags": [
+      "appetizer",
+      "game-day",
+      "crowd-pleaser",
+      "medium"
+    ],
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "servings": 8,
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 lb ground beef",
+      "1/2 cup breadcrumbs",
+      "1 egg",
+      "1/4 cup finely chopped onion",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1 tsp garlic powder",
+      "12 slices bacon (cut in half)",
+      "3/4 cup BBQ sauce"
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F (205\u00b0C). Line a baking sheet with foil and place a rack on top if you have one.",
+      "Mix beef, breadcrumbs, egg, onion, salt, pepper, and garlic powder. Form into 24 small meatballs.",
+      "Wrap each meatball with half a slice of bacon and secure with a toothpick.",
+      "Bake 20 minutes. Brush with BBQ sauce and bake 8\u201310 more minutes until bacon is crisp and meatballs are cooked through.",
+      "Serve warm."
+    ],
+    "notes": [
+      "Use turkey bacon if you want a lighter option (it won\u2019t crisp as much).",
+      "Keep warm in a slow cooker on LOW for parties."
+    ],
+    "nutrition": "Nutrition is estimated and will vary by bacon and sauce used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-12",
+    "categoryLabel": "Tailgate",
+    "totalTime": "50 min",
+    "date": "2026-01-12",
+    "url": "/recipes/recipe.html?id=r011"
+  },
+  {
+    "id": "r012",
+    "title": "Cheesesteak Egg Rolls",
+    "slug": "cheesesteak-egg-rolls",
+    "description": "Philly-inspired egg rolls stuffed with steak, peppers, onions, and melty cheese.",
+    "category": "appetizer",
+    "tags": [
+      "fried",
+      "game-day",
+      "crowd-pleaser",
+      "hard"
+    ],
+    "prepMinutes": 25,
+    "cookMinutes": 15,
+    "servings": 10,
+    "difficulty": "Hard",
+    "ingredients": [
+      "1 lb shaved steak (or thinly sliced ribeye)",
+      "1 tbsp olive oil",
+      "1 small onion, thinly sliced",
+      "1 bell pepper, thinly sliced",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "6 slices provolone (or 1 1/2 cups shredded mozzarella/provolone blend)",
+      "10 egg roll wrappers",
+      "1 egg, beaten (for sealing)",
+      "Oil for frying (or air-fryer cooking spray)"
+    ],
+    "instructions": [
+      "Heat olive oil in a skillet over medium-high heat. Cook onion and pepper 4\u20135 minutes until softened.",
+      "Add steak, salt, and pepper. Cook 2\u20133 minutes until just done. Let cool slightly.",
+      "Lay an egg roll wrapper in a diamond shape. Add 2\u20133 tbsp filling and a bit of cheese. Fold and roll tightly, sealing the edge with beaten egg.",
+      "Fry in 350\u00b0F (175\u00b0C) oil for 3\u20134 minutes until golden (or air fry at 390\u00b0F for 8\u201310 minutes, flipping halfway).",
+      "Serve with queso, ranch, or spicy ketchup."
+    ],
+    "notes": [
+      "Cooling the filling prevents wrappers from getting soggy and tearing.",
+      "For extra cheesiness, add a small cube of cheese in the center before rolling."
+    ],
+    "nutrition": "Nutrition is estimated and will vary by frying method and cheese amount.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-13",
+    "categoryLabel": "Appetizer",
+    "totalTime": "40 min",
+    "date": "2026-01-13",
+    "url": "/recipes/recipe.html?id=r012"
+  },
+  {
+    "id": "r013",
+    "title": "Crispy Parmesan Roasted Potatoes",
+    "slug": "crispy-parmesan-roasted-potatoes",
+    "description": "Golden roasted potatoes with a salty Parmesan crust and garlic flavor.",
+    "category": "side",
+    "tags": [
+      "oven",
+      "crispy",
+      "gluten-free",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 45,
+    "servings": 6,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 lbs baby potatoes, halved",
+      "2 tbsp olive oil",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1 tsp garlic powder",
+      "1 tsp Italian seasoning (optional)",
+      "1/2 cup grated Parmesan",
+      "Optional: chopped parsley"
+    ],
+    "instructions": [
+      "Preheat oven to 425\u00b0F (220\u00b0C).",
+      "Toss potatoes with olive oil, salt, pepper, garlic powder, and Italian seasoning.",
+      "Spread in a single layer on a baking sheet, cut-side down.",
+      "Roast 35\u201340 minutes until browned and tender.",
+      "Sprinkle Parmesan over potatoes and roast 5 more minutes.",
+      "Garnish with parsley and serve."
+    ],
+    "notes": [
+      "Don\u2019t overcrowd the pan\u2014space helps them crisp.",
+      "Try using freshly grated Parmesan for the best crust."
+    ],
+    "nutrition": "Nutrition is estimated and depends on oil/cheese amounts.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-14",
+    "categoryLabel": "Side",
+    "totalTime": "55 min",
+    "date": "2026-01-14",
+    "url": "/recipes/recipe.html?id=r013"
+  },
+  {
+    "id": "r014",
+    "title": "Spinach & Artichoke Stuffed Mushrooms",
+    "slug": "spinach-artichoke-stuffed-mushrooms",
+    "description": "Bite-sized mushrooms stuffed with creamy spinach-artichoke filling.",
+    "category": "appetizer",
+    "tags": [
+      "party",
+      "vegetarian",
+      "oven",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 20,
+    "servings": 6,
+    "difficulty": "Easy",
+    "ingredients": [
+      "16 large button mushrooms",
+      "4 oz cream cheese, softened",
+      "1/2 cup chopped spinach (fresh or thawed frozen, squeezed dry)",
+      "1/2 cup chopped artichoke hearts (canned, drained)",
+      "1/2 cup shredded mozzarella",
+      "2 tbsp grated Parmesan",
+      "1 clove garlic, minced",
+      "1/4 tsp salt",
+      "1/4 tsp black pepper"
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F (190\u00b0C).",
+      "Remove stems from mushrooms and place caps on a baking sheet.",
+      "Mix cream cheese, spinach, artichokes, mozzarella, Parmesan, garlic, salt, and pepper.",
+      "Spoon filling into mushroom caps.",
+      "Bake 18\u201322 minutes until mushrooms are tender and tops are lightly golden."
+    ],
+    "notes": [
+      "If using frozen spinach, squeeze out as much water as possible.",
+      "Serve immediately for the best texture."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cheese amounts.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-15",
+    "categoryLabel": "Appetizer",
+    "totalTime": "35 min",
+    "date": "2026-01-15",
+    "url": "/recipes/recipe.html?id=r014"
+  },
+  {
+    "id": "r015",
+    "title": "Honey Glazed Carrots",
+    "slug": "honey-glazed-carrots",
+    "description": "Tender carrots tossed in buttery honey glaze\u2014simple and crowd-friendly.",
+    "category": "side",
+    "tags": [
+      "vegetarian",
+      "gluten-free",
+      "quick",
+      "easy"
+    ],
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 lb carrots, peeled and sliced",
+      "2 tbsp butter",
+      "2 tbsp honey",
+      "1/2 tsp kosher salt",
+      "Optional: pinch of cinnamon or fresh thyme"
+    ],
+    "instructions": [
+      "Bring a pot of salted water to a boil. Add carrots and cook 6\u20138 minutes until just tender. Drain.",
+      "Return carrots to the pot. Add butter and honey and stir until glossy.",
+      "Season with salt and add cinnamon or thyme if using.",
+      "Serve warm."
+    ],
+    "notes": [
+      "For deeper flavor, roast carrots at 425\u00b0F for 20\u201325 minutes, then toss with honey and butter.",
+      "Add a squeeze of orange juice for a citrusy version."
+    ],
+    "nutrition": "Nutrition is estimated and depends on honey/butter used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-16",
+    "categoryLabel": "Side",
+    "totalTime": "20 min",
+    "date": "2026-01-16",
+    "url": "/recipes/recipe.html?id=r015"
+  },
+  {
+    "id": "r016",
+    "title": "Southern-Style Baked Mac & Cheese",
+    "slug": "southern-style-baked-mac-and-cheese",
+    "description": "Creamy baked mac with a golden top\u2014pure comfort food.",
+    "category": "side",
+    "tags": [
+      "comfort-food",
+      "baked",
+      "crowd-pleaser",
+      "medium"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 40,
+    "servings": 8,
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 lb elbow macaroni",
+      "3 tbsp butter, melted",
+      "2 cups shredded cheddar",
+      "1 cup shredded mozzarella",
+      "2 cups milk (whole preferred)",
+      "2 eggs",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1/2 tsp paprika",
+      "Optional: 1/2 tsp mustard powder"
+    ],
+    "instructions": [
+      "Preheat oven to 350\u00b0F (175\u00b0C). Grease a 9x13-inch baking dish.",
+      "Cook macaroni 1 minute less than package directions. Drain.",
+      "Whisk milk, eggs, melted butter, salt, pepper, paprika, and mustard powder (optional).",
+      "In the baking dish, combine macaroni with cheeses, reserving a handful for the top.",
+      "Pour milk mixture over noodles, stir, and top with reserved cheese.",
+      "Bake 35\u201340 minutes until set and golden."
+    ],
+    "notes": [
+      "Let rest 10 minutes before slicing for cleaner servings.",
+      "Mix in cooked bacon or jalape\u00f1os for a tailgate twist."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cheese type and serving size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-17",
+    "categoryLabel": "Side",
+    "totalTime": "55 min",
+    "date": "2026-01-17",
+    "url": "/recipes/recipe.html?id=r016"
+  },
+  {
+    "id": "r017",
+    "title": "Garlic Knots with Marinara Dip",
+    "slug": "garlic-knots-with-marinara-dip",
+    "description": "Soft, buttery garlic knots\u2014perfect with warm marinara for dipping.",
+    "category": "appetizer",
+    "tags": [
+      "baked",
+      "party",
+      "kid-friendly",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "servings": 10,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 lb pizza dough (store-bought or homemade)",
+      "3 tbsp butter, melted",
+      "2 cloves garlic, minced",
+      "1 tbsp chopped parsley",
+      "1/2 tsp kosher salt",
+      "1/4 cup grated Parmesan (optional)",
+      "1 cup marinara sauce (for dipping)"
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F (205\u00b0C). Line a baking sheet with parchment.",
+      "Divide dough into 10\u201312 pieces. Roll each into a rope and tie into a knot.",
+      "Bake 12\u201315 minutes until lightly golden.",
+      "Mix melted butter, garlic, parsley, salt, and Parmesan (optional). Brush over warm knots.",
+      "Serve with marinara."
+    ],
+    "notes": [
+      "For extra browning, brush knots lightly with olive oil before baking.",
+      "These reheat well in the oven at 350\u00b0F for 5\u20137 minutes."
+    ],
+    "nutrition": "Nutrition is estimated and depends on dough brand and butter used.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-18",
+    "categoryLabel": "Appetizer",
+    "totalTime": "30 min",
+    "date": "2026-01-18",
+    "url": "/recipes/recipe.html?id=r017"
+  },
+  {
+    "id": "r018",
+    "title": "Classic Chocolate Chip Cookies",
+    "slug": "classic-chocolate-chip-cookies",
+    "description": "Soft centers, crisp edges, and plenty of chocolate chips.",
+    "category": "dessert",
+    "tags": [
+      "baking",
+      "kid-friendly",
+      "classic",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 12,
+    "servings": 24,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 1/4 cups all-purpose flour",
+      "1 tsp baking soda",
+      "1 tsp kosher salt",
+      "1 cup unsalted butter, softened",
+      "3/4 cup granulated sugar",
+      "3/4 cup brown sugar",
+      "2 large eggs",
+      "2 tsp vanilla extract",
+      "2 cups chocolate chips"
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F (190\u00b0C). Line baking sheets with parchment.",
+      "Whisk flour, baking soda, and salt.",
+      "Cream butter and sugars until fluffy. Beat in eggs and vanilla.",
+      "Mix in dry ingredients until just combined. Fold in chocolate chips.",
+      "Scoop onto baking sheets and bake 10\u201312 minutes until edges are set.",
+      "Cool 5 minutes on the pan, then transfer to a rack."
+    ],
+    "notes": [
+      "Chill dough 30 minutes for thicker cookies.",
+      "Swap half the chocolate chips for chopped dark chocolate for a richer bite."
+    ],
+    "nutrition": "Nutrition is estimated and depends on cookie size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-19",
+    "categoryLabel": "Dessert",
+    "totalTime": "27 min",
+    "date": "2026-01-19",
+    "url": "/recipes/recipe.html?id=r018"
+  },
+  {
+    "id": "r019",
+    "title": "No-Bake Peanut Butter Bars",
+    "slug": "no-bake-peanut-butter-bars",
+    "description": "Rich peanut butter bars with a smooth chocolate topping\u2014no oven needed.",
+    "category": "dessert",
+    "tags": [
+      "no-bake",
+      "quick",
+      "chocolate",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 0,
+    "servings": 16,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 cup peanut butter",
+      "1/2 cup butter, melted",
+      "2 cups powdered sugar",
+      "1 1/2 cups graham cracker crumbs",
+      "1 1/2 cups chocolate chips",
+      "1 tbsp coconut oil (optional, helps chocolate spread)"
+    ],
+    "instructions": [
+      "Line an 8x8-inch pan with parchment.",
+      "Mix peanut butter and melted butter. Stir in powdered sugar and graham cracker crumbs until thick.",
+      "Press mixture firmly into the pan.",
+      "Melt chocolate chips (and coconut oil if using) until smooth, then spread over the top.",
+      "Chill 1\u20132 hours until set, then slice."
+    ],
+    "notes": [
+      "Use crunchy peanut butter for extra texture.",
+      "Store in the fridge for cleaner slices."
+    ],
+    "nutrition": "Nutrition is estimated and depends on bar size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-20",
+    "categoryLabel": "Dessert",
+    "totalTime": "15 min",
+    "date": "2026-01-20",
+    "url": "/recipes/recipe.html?id=r019"
+  },
+  {
+    "id": "r020",
+    "title": "Apple Crisp with Oat Topping",
+    "slug": "apple-crisp-with-oat-topping",
+    "description": "Warm cinnamon apples under a buttery oat crumble\u2014best with ice cream.",
+    "category": "dessert",
+    "tags": [
+      "baking",
+      "fall",
+      "comfort-food",
+      "easy"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 40,
+    "servings": 8,
+    "difficulty": "Easy",
+    "ingredients": [
+      "5 apples, peeled and sliced",
+      "2 tbsp lemon juice",
+      "1/3 cup granulated sugar",
+      "1 tsp cinnamon",
+      "2 tbsp all-purpose flour",
+      "1 cup rolled oats",
+      "1/2 cup brown sugar",
+      "1/2 cup all-purpose flour",
+      "1/2 tsp salt",
+      "6 tbsp butter, cold and cubed"
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F (190\u00b0C).",
+      "Toss apples with lemon juice, granulated sugar, cinnamon, and 2 tbsp flour. Spread in a baking dish.",
+      "Mix oats, brown sugar, 1/2 cup flour, and salt. Cut in butter until crumbly.",
+      "Sprinkle topping over apples.",
+      "Bake 35\u201345 minutes until bubbly and golden."
+    ],
+    "notes": [
+      "Use a mix of sweet and tart apples for better flavor.",
+      "Let cool 10 minutes before serving so it thickens slightly."
+    ],
+    "nutrition": "Nutrition is estimated and depends on serving size.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-21",
+    "categoryLabel": "Dessert",
+    "totalTime": "55 min",
+    "date": "2026-01-21",
+    "url": "/recipes/recipe.html?id=r020"
+  },
+  {
+    "id": "r021",
+    "title": "Brownie Sundae Cups",
+    "slug": "brownie-sundae-cups",
+    "description": "Individual brownie cups filled with ice cream and toppings\u2014party-perfect.",
+    "category": "dessert",
+    "tags": [
+      "party",
+      "chocolate",
+      "fun",
+      "medium"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 20,
+    "servings": 12,
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 box brownie mix (or your favorite homemade brownie batter)",
+      "Ingredients required by the brownie mix (typically eggs, oil, water)",
+      "Ice cream (vanilla or favorite flavor)",
+      "Chocolate sauce",
+      "Whipped cream (optional)",
+      "Sprinkles or chopped nuts (optional)"
+    ],
+    "instructions": [
+      "Preheat oven to 350\u00b0F (175\u00b0C). Grease a muffin tin well.",
+      "Prepare brownie batter according to package directions.",
+      "Fill each muffin cup about 2/3 full and bake 18\u201322 minutes until set.",
+      "Cool 10 minutes, then gently press the center of each brownie down with a spoon to form a cup. Cool completely.",
+      "Fill with ice cream and top with chocolate sauce and optional toppings."
+    ],
+    "notes": [
+      "Freeze the brownie cups before filling for extra clean assembly.",
+      "If brownies stick, run a thin knife around edges before removing."
+    ],
+    "nutrition": "Nutrition is estimated and varies with ice cream and toppings.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-22",
+    "categoryLabel": "Dessert",
+    "totalTime": "35 min",
+    "date": "2026-01-22",
+    "url": "/recipes/recipe.html?id=r021"
+  },
+  {
+    "id": "r022",
+    "title": "Lemon Loaf Cake",
+    "slug": "lemon-loaf-cake",
+    "description": "Bright, moist lemon loaf finished with a sweet-tangy glaze.",
+    "category": "dessert",
+    "tags": [
+      "baking",
+      "citrus",
+      "snack",
+      "medium"
+    ],
+    "prepMinutes": 15,
+    "cookMinutes": 55,
+    "servings": 10,
+    "difficulty": "Medium",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "1 tsp baking powder",
+      "1/2 tsp salt",
+      "1 cup granulated sugar",
+      "2 large eggs",
+      "1/2 cup melted butter (or neutral oil)",
+      "1/2 cup milk",
+      "2 tbsp lemon zest",
+      "1/4 cup lemon juice",
+      "1 tsp vanilla extract",
+      "Glaze: 1 cup powdered sugar + 2\u20133 tbsp lemon juice"
+    ],
+    "instructions": [
+      "Preheat oven to 350\u00b0F (175\u00b0C). Grease and line a loaf pan with parchment.",
+      "Whisk flour, baking powder, and salt.",
+      "In another bowl, whisk sugar, eggs, melted butter, milk, lemon zest, lemon juice, and vanilla.",
+      "Stir dry ingredients into wet until just combined.",
+      "Bake 50\u201360 minutes until a toothpick comes out clean. Cool 10 minutes, then remove from pan.",
+      "Whisk glaze ingredients and drizzle over cooled loaf."
+    ],
+    "notes": [
+      "Don\u2019t overmix\u2014stir until just combined to keep the loaf tender.",
+      "Add poppy seeds for a lemon-poppy twist."
+    ],
+    "nutrition": "Nutrition is estimated and depends on glaze amount.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-23",
+    "categoryLabel": "Dessert",
+    "totalTime": "70 min",
+    "date": "2026-01-23",
+    "url": "/recipes/recipe.html?id=r022"
+  },
+  {
+    "id": "r023",
+    "title": "Weeknight Chicken Tacos",
+    "slug": "weeknight-chicken-tacos",
+    "description": "Fast, flavorful chicken tacos with endless topping options.",
+    "category": "chicken",
+    "tags": [
+      "tacos",
+      "quick",
+      "family-friendly",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 12,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 1/2 lbs boneless chicken breasts or thighs, sliced",
+      "2 tbsp olive oil",
+      "2 tbsp taco seasoning",
+      "1/4 cup water",
+      "8 small tortillas",
+      "Toppings: shredded lettuce, diced tomatoes, cheese, salsa, sour cream, lime wedges"
+    ],
+    "instructions": [
+      "Heat olive oil in a skillet over medium-high heat.",
+      "Add chicken and cook 6\u20138 minutes, stirring occasionally.",
+      "Sprinkle in taco seasoning and water. Stir and simmer 2\u20133 minutes until saucy and chicken is cooked through.",
+      "Warm tortillas and assemble tacos with toppings."
+    ],
+    "notes": [
+      "Add sliced onions and peppers to the skillet for extra veggies.",
+      "Swap chicken for shrimp\u2014cook shrimp 2 minutes per side."
+    ],
+    "nutrition": "Nutrition is estimated and varies with tortillas and toppings.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-24",
+    "categoryLabel": "Chicken",
+    "totalTime": "22 min",
+    "date": "2026-01-24",
+    "url": "/recipes/recipe.html?id=r023"
+  },
+  {
+    "id": "r024",
+    "title": "Breakfast-for-Dinner Hash",
+    "slug": "breakfast-for-dinner-hash",
+    "description": "Crispy potatoes, sausage, peppers, and eggs\u2014breakfast vibes, dinner timing.",
+    "category": "breakfast",
+    "tags": [
+      "skillet",
+      "comfort-food",
+      "one-pan",
+      "easy"
+    ],
+    "prepMinutes": 10,
+    "cookMinutes": 25,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 tbsp olive oil",
+      "1 1/2 lbs potatoes, diced small",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1/2 tsp paprika",
+      "8 oz breakfast sausage",
+      "1 bell pepper, diced",
+      "1 small onion, diced",
+      "4 eggs",
+      "Optional: hot sauce, shredded cheese, green onions"
+    ],
+    "instructions": [
+      "Heat olive oil in a large skillet over medium-high heat. Add potatoes, salt, pepper, and paprika.",
+      "Cook potatoes 12\u201315 minutes, stirring occasionally, until crispy and tender.",
+      "Add sausage, breaking it up, and cook 5\u20136 minutes until browned.",
+      "Stir in bell pepper and onion and cook 3\u20134 minutes until softened.",
+      "Make 4 small wells and crack in eggs. Cover and cook 4\u20136 minutes until eggs are set to your liking.",
+      "Top with optional toppings and serve."
+    ],
+    "notes": [
+      "Parboil potatoes for 5 minutes first if you want extra-fast crisping.",
+      "Use turkey sausage for a lighter option."
+    ],
+    "nutrition": "Nutrition is estimated and varies with sausage and toppings.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-25",
+    "categoryLabel": "Breakfast",
+    "totalTime": "35 min",
+    "date": "2026-01-25",
+    "url": "/recipes/recipe.html?id=r024"
+  },
+  {
+    "id": "r025",
+    "title": "Air Fryer Chicken Tenders",
+    "slug": "air-fryer-chicken-tenders",
+    "description": "Crispy, juicy tenders without deep frying\u2014kid-approved and quick.",
+    "category": "chicken",
+    "tags": [
+      "air-fryer",
+      "kid-friendly",
+      "quick",
+      "easy"
+    ],
+    "prepMinutes": 12,
+    "cookMinutes": 12,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "1 1/2 lbs chicken tenders",
+      "1 tsp kosher salt",
+      "1/2 tsp black pepper",
+      "1 tsp garlic powder",
+      "1/2 tsp paprika",
+      "2 eggs, beaten",
+      "1 1/2 cups panko breadcrumbs",
+      "1/3 cup grated Parmesan (optional)",
+      "Cooking spray"
+    ],
+    "instructions": [
+      "Preheat air fryer to 400\u00b0F (205\u00b0C).",
+      "Season chicken with salt, pepper, garlic powder, and paprika.",
+      "Dip chicken in beaten eggs, then coat with panko (mix in Parmesan if using).",
+      "Spray basket with cooking spray and place tenders in a single layer. Spray tops lightly.",
+      "Air fry 10\u201312 minutes, flipping halfway, until golden and cooked through (165\u00b0F).",
+      "Serve with your favorite dipping sauce."
+    ],
+    "notes": [
+      "Cook in batches\u2014overcrowding prevents crisping.",
+      "Swap panko for crushed cornflakes for extra crunch."
+    ],
+    "nutrition": "Nutrition is estimated and depends on breading thickness and dips.",
+    "image": "/assets/img/ck-mark.svg",
+    "datePublished": "2026-01-26",
+    "categoryLabel": "Chicken",
+    "totalTime": "24 min",
+    "date": "2026-01-26",
+    "url": "/recipes/recipe.html?id=r025"
   }
 ]

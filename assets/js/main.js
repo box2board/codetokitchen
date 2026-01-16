@@ -113,7 +113,38 @@ const site = {
   async loadRecipes() {
     const res = await fetch('/data/recipes.json');
     if (!res.ok) return [];
-    return res.json();
+    const data = await res.json();
+    site.validateRecipes(data);
+    return data;
+  },
+  validateRecipes(recipes) {
+    const requiredFields = [
+      'id',
+      'title',
+      'slug',
+      'description',
+      'category',
+      'tags',
+      'prepMinutes',
+      'cookMinutes',
+      'servings',
+      'difficulty',
+      'ingredients',
+      'instructions',
+      'image',
+      'datePublished'
+    ];
+    recipes.forEach((recipe) => {
+      const missing = requiredFields.filter((field) => {
+        if (!(field in recipe)) return true;
+        const value = recipe[field];
+        if (Array.isArray(value)) return value.length === 0;
+        return value === '' || value == null;
+      });
+      if (missing.length) {
+        console.warn(`Recipe ${recipe.id || 'unknown'} missing fields: ${missing.join(', ')}`);
+      }
+    });
   },
   applyFilters(recipes, params) {
     const q = params.get('q')?.toLowerCase() || '';
@@ -225,6 +256,78 @@ const site = {
         </div>
       </article>
     `).join('');
+  },
+  async initRecipeDetail() {
+    const container = document.querySelector('[data-recipe-detail]');
+    if (!container) return;
+    const params = new URLSearchParams(window.location.search);
+    const recipeId = params.get('id');
+    const recipes = await site.loadRecipes();
+    const recipe = recipes.find((item) => item.id === recipeId);
+    if (!recipe) {
+      container.innerHTML = '<p>Recipe not found. Explore more in the <a href="/recipes/index.html">recipe directory</a>.</p>';
+      return;
+    }
+    const totalTime = recipe.totalTime || `${(recipe.prepMinutes || 0) + (recipe.cookMinutes || 0)} min`;
+    const categoryLabel = recipe.categoryLabel || recipe.category;
+    const ingredientListId = `ingredients-list-${recipe.id}`;
+    container.dataset.recipeId = recipe.id;
+    container.innerHTML = `
+      <div class="recipe-hero">
+        <div>
+          <h1>${recipe.title}</h1>
+          <p class="recipe-meta">${recipe.servings} servings • Prep: ${recipe.prepMinutes} min • Cook: ${recipe.cookMinutes} min • Total: ${totalTime}</p>
+          <p>${recipe.description}</p>
+          <div class="recipe-actions">
+            <a class="btn btn-ghost" href="#ingredients">Jump to recipe</a>
+            <button class="btn btn-secondary" type="button" data-print>Print recipe</button>
+          </div>
+        </div>
+        <img src="${recipe.image}" alt="${recipe.title} image" loading="lazy" width="220" height="220">
+      </div>
+
+      <div class="recipe-details">
+        <div class="recipe-detail"><strong>Difficulty</strong>${recipe.difficulty}</div>
+        <div class="recipe-detail"><strong>Category</strong>${categoryLabel}</div>
+        <div class="recipe-detail"><strong>Tags</strong>${recipe.tags.join(', ')}</div>
+      </div>
+
+      <section class="ingredients" id="ingredients">
+        <h2>Ingredients</h2>
+        <ul id="${ingredientListId}" data-recipe-id="${recipe.id}">
+          ${recipe.ingredients.map((item) => `<li>${item}</li>`).join('')}
+        </ul>
+        <button class="btn btn-secondary copy-btn" type="button" onclick="copyIngredients('${ingredientListId}')">Copy ingredients</button>
+      </section>
+
+      <section class="instructions" id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+          ${recipe.instructions.map((step) => `<li>${step}</li>`).join('')}
+        </ol>
+      </section>
+
+      ${recipe.notes?.length ? `
+      <section class="notes">
+        <h2>Notes & Substitutions</h2>
+        <ul>
+          ${recipe.notes.map((note) => `<li>${note}</li>`).join('')}
+        </ul>
+      </section>
+      ` : ''}
+
+      ${recipe.nutrition ? `
+      <section class="nutrition">
+        <h2>Nutrition</h2>
+        <p>${recipe.nutrition}</p>
+      </section>
+      ` : ''}
+
+      <section class="more-recipes">
+        <h2>More recipes to try</h2>
+        <div class="more-recipes-grid" data-more-recipes data-current-id="${recipe.id}"></div>
+      </section>
+    `;
   }
 };
 
@@ -238,6 +341,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   site.initRecipeDirectory();
   site.initCategoriesPage();
   site.initMoreRecipes();
+  site.initRecipeDetail();
 });
 
 window.copyIngredients = site.copyIngredients;
