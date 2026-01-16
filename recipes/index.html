@@ -4,82 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipes | Code to Kitchen</title>
-  <meta name="description" content="Explore AI-inspired recipes tested for real-life cooking.">
-  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
-  <link rel="canonical" href="/recipes/index.html">
+  <meta name="description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/ck-mark.svg">
+  <link rel="canonical" href="https://codetokitchen.com/recipes/index.html">
   <meta property="og:title" content="Recipes | Code to Kitchen">
-  <meta property="og:description" content="Explore AI-inspired recipes tested for real-life cooking.">
+  <meta property="og:description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/img/og-image.jpg">
-  <meta property="og:url" content="/recipes/index.html">
+  <meta property="og:site_name" content="Code to Kitchen">
+  <meta property="og:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
+  <meta property="og:url" content="https://codetokitchen.com/recipes/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recipes | Code to Kitchen">
+  <meta name="twitter:description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
+  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://codetokitchen.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Recipes",
+        "item": "https://codetokitchen.com/recipes/index.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-<header>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="nav-container">
-    <div class="logo">
-      <img src="/assets/img/logo.svg" alt="Code to Kitchen logo">
-      <span>Code to Kitchen</span>
-    </div>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/tips.html">Tips</a>
-      <a href="/products.html">Products</a>
-      <a href="/recipes/index.html">Recipes</a>
-    </nav>
-  </div>
-</header>
-<main id="main-content">
-  <h1>Recipes</h1>
-  <p>Explore AI-inspired recipes tested for real-life cooking.</p>
-  <div class="grid grid-3">
-    <div class="card">
-      <img src="/assets/img/placeholder-1.jpg" alt="Sheet-Pan Lemon Herb Chicken & Veggies image" loading="lazy">
-      <div class="card-content">
-        <h3>Sheet-Pan Lemon Herb Chicken & Veggies</h3>
-        <p>Weeknight-friendly chicken thighs with potatoes, carrots, and green beans, roasted with lemon, garlic, and herbs.</p>
-        <a href="/recipes/sheet-pan-lemon-herb-chicken.html" class="btn">View Recipe</a>
+  <div data-include="header"></div>
+  <main id="main-content">
+    <section class="recipe-directory">
+      <div class="wrap">
+        <h1>Recipes</h1>
+        <p>Explore AI-inspired recipes tested for real-life cooking. Filter by category, tag, or a quick search.</p>
+
+        <div class="directory-controls" role="search">
+          <label>
+            Search
+            <input id="recipe-search" type="search" name="q" placeholder="Search by title, ingredient, or tag">
+          </label>
+          <label>
+            Category
+            <select id="recipe-category" name="category">
+              <option value="all">All categories</option>
+              <option value="chicken">Chicken</option>
+              <option value="seafood">Seafood</option>
+              <option value="pasta">Pasta</option>
+              <option value="rice">Rice</option>
+              <option value="bread">Bread</option>
+            </select>
+          </label>
+          <label>
+            Tag
+            <select id="recipe-tag" name="tag">
+              <option value="all">All tags</option>
+              <option value="weeknight">Weeknight</option>
+              <option value="one-pot">One-Pot</option>
+              <option value="air-fryer">Air Fryer</option>
+              <option value="sheet-pan">Sheet Pan</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="quick">Quick</option>
+              <option value="make-ahead">Make Ahead</option>
+            </select>
+          </label>
+          <label>
+            Sort
+            <select id="recipe-sort" name="sort">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+              <option value="az">A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <p id="recipe-results-count" aria-live="polite"></p>
+        <div id="recipe-directory" class="grid"></div>
       </div>
-    </div>
-    <div class="card">
-      <img src="/assets/img/placeholder-2.jpg" alt="One-Pot Creamy Tomato Basil Pasta image" loading="lazy">
-      <div class="card-content">
-        <h3>One-Pot Creamy Tomato Basil Pasta</h3>
-        <p>Pantry pasta where noodles simmer directly in a garlicky tomato broth finished with cream and basil.</p>
-        <a href="/recipes/one-pot-creamy-tomato-basil-pasta.html" class="btn">View Recipe</a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="/assets/img/placeholder-3.jpg" alt="Crispy Air-Fryer Honey-Chili Salmon image" loading="lazy">
-      <div class="card-content">
-        <h3>Crispy Air-Fryer Honey-Chili Salmon</h3>
-        <p>Sticky-sweet heat with shatter-edged salmon, done in minutes.</p>
-        <a href="/recipes/air-fryer-honey-chili-salmon.html" class="btn">View Recipe</a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="/assets/img/placeholder-4.jpg" alt="15-Minute Veggie Fried Rice image" loading="lazy">
-      <div class="card-content">
-        <h3>15-Minute Veggie Fried Rice</h3>
-        <p>Use day-old rice for best texture; freezer veggies keep it weeknight-easy.</p>
-        <a href="/recipes/fifteen-minute-veggie-fried-rice.html" class="btn">View Recipe</a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="/assets/img/placeholder-5.jpg" alt="No-Knead Skillet Garlic Bread image" loading="lazy">
-      <div class="card-content">
-        <h3>No-Knead Skillet Garlic Bread</h3>
-        <p>Chewy-crisp edges, garlicky butter, great with pasta or soups.</p>
-        <a href="/recipes/no-knead-skillet-garlic-bread.html" class="btn">View Recipe</a>
-      </div>
-    </div>
-  </div>
-</main>
-<footer class="footer">
-  <small>© 2025 Code to Kitchen. All rights reserved.</small>
-  <small>As an Amazon Associate, we earn from qualifying purchases.</small>
-</footer>
+    </section>
+  </main>
+  <div data-include="footer"></div>
 </body>
 </html>

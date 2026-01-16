@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sheet-pan-lemon-herb-chicken",
+    "title": "Sheet-Pan Lemon Herb Chicken & Veggies",
+    "description": "Roasted thighs with potatoes, carrots, and green beans in a lemon-garlic herb glaze.",
+    "url": "/recipes/sheet-pan-lemon-herb-chicken.html",
+    "image": "/assets/img/ck-mark.svg",
+    "category": "chicken",
+    "categoryLabel": "Chicken",
+    "tags": ["weeknight", "sheet-pan"],
+    "date": "2024-10-02",
+    "totalTime": "55 min",
+    "difficulty": "Easy",
+    "ingredients": ["chicken thighs", "potatoes", "green beans", "lemon", "garlic"]
+  },
+  {
+    "id": "air-fryer-honey-chili-salmon",
+    "title": "Crispy Air-Fryer Honey-Chili Salmon",
+    "description": "Sticky-sweet salmon with crisp edges and a quick chili glaze.",
+    "url": "/recipes/air-fryer-honey-chili-salmon.html",
+    "image": "/assets/img/ck-mark.svg",
+    "category": "seafood",
+    "categoryLabel": "Seafood",
+    "tags": ["air-fryer", "quick"],
+    "date": "2024-10-10",
+    "totalTime": "19 min",
+    "difficulty": "Easy",
+    "ingredients": ["salmon", "honey", "soy sauce", "chili crisp"]
+  },
+  {
+    "id": "one-pot-creamy-tomato-basil-pasta",
+    "title": "One-Pot Creamy Tomato Basil Pasta",
+    "description": "Creamy tomato basil pasta that cooks in a single pot for fast cleanup.",
+    "url": "/recipes/one-pot-creamy-tomato-basil-pasta.html",
+    "image": "/assets/img/ck-mark.svg",
+    "category": "pasta",
+    "categoryLabel": "Pasta",
+    "tags": ["one-pot", "weeknight"],
+    "date": "2024-09-20",
+    "totalTime": "28 min",
+    "difficulty": "Easy",
+    "ingredients": ["spaghetti", "tomatoes", "cream", "basil"]
+  },
+  {
+    "id": "fifteen-minute-veggie-fried-rice",
+    "title": "15-Minute Veggie Fried Rice",
+    "description": "A quick skillet dinner using day-old rice and freezer veggies.",
+    "url": "/recipes/fifteen-minute-veggie-fried-rice.html",
+    "image": "/assets/img/ck-mark.svg",
+    "category": "rice",
+    "categoryLabel": "Rice",
+    "tags": ["quick", "vegetarian"],
+    "date": "2024-09-12",
+    "totalTime": "15 min",
+    "difficulty": "Easy",
+    "ingredients": ["rice", "eggs", "mixed vegetables", "soy sauce"]
+  },
+  {
+    "id": "no-knead-skillet-garlic-bread",
+    "title": "No-Knead Skillet Garlic Bread",
+    "description": "Chewy-crisp garlic bread baked in a cast-iron skillet.",
+    "url": "/recipes/no-knead-skillet-garlic-bread.html",
+    "image": "/assets/img/ck-mark.svg",
+    "category": "bread",
+    "categoryLabel": "Bread",
+    "tags": ["make-ahead", "weeknight"],
+    "date": "2024-09-05",
+    "totalTime": "120 min",
+    "difficulty": "Easy",
+    "ingredients": ["flour", "yeast", "garlic", "butter"]
+  }
+]
