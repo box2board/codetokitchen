@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light;
+  --square-size: clamp(42px, 8vw, 60px);
+  --light-square: #e5e7eb;
+  --dark-square: #64748b;
+  --accent: #f97316;
+  --accent-dark: #c2410c;
+  --text: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: #f8fafc;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 96px 16px 64px;
+}
+
+.game-shell {
+  width: min(520px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.game-header h1 {
+  font-size: clamp(1.6rem, 2vw + 1.2rem, 2.4rem);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.status-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.turn-indicator {
+  margin: 0;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.reset-button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.reset-button:hover,
+.reset-button:focus-visible {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, var(--square-size));
+  grid-template-rows: repeat(8, var(--square-size));
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #0f172a;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+}
+
+.square {
+  width: var(--square-size);
+  height: var(--square-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(24px, 3vw, 40px);
+  cursor: pointer;
+  user-select: none;
+}
+
+.square.light {
+  background: var(--light-square);
+  color: #0f172a;
+}
+
+.square.dark {
+  background: var(--dark-square);
+  color: #f8fafc;
+}
+
+.square.selected {
+  outline: 3px solid #f59e0b;
+  outline-offset: -3px;
+}
+
+@media (max-width: 520px) {
+  .status-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reset-button {
+    width: 100%;
+    text-align: center;
+  }
+}
