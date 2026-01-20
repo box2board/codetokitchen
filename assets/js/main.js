@@ -14,6 +14,15 @@ const site = {
       }
     }));
   },
+  insertPopunderTag() {
+    if (document.querySelector('script[src="https://al5sm.com/tag.min.js"]')) return;
+    const target = document.body || document.documentElement;
+    if (!target) return;
+    const script = document.createElement('script');
+    script.dataset.zone = '10493702';
+    script.src = 'https://al5sm.com/tag.min.js';
+    target.appendChild(script);
+  },
   initNav() {
     const toggle = document.querySelector('.nav-toggle');
     const header = document.querySelector('.site-header');
@@ -333,6 +342,7 @@ const site = {
 
 document.addEventListener('DOMContentLoaded', async () => {
   await site.loadIncludes();
+  site.insertPopunderTag();
   site.initNav();
   site.initCategoryChips();
   site.initSmoothScroll();
