@@ -8,7 +8,8 @@
     return;
   }
 
-  const target = document.body || document.documentElement;
+  const target =
+    document.querySelector('main') || document.body || document.documentElement;
   if (!target) {
     return;
   }
