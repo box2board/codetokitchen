@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title>Bread recipe placeholder</title>
+  <desc>Gradient placeholder for Bread recipes on Code to Kitchen.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7e6d1"/>
+      <stop offset="100%" stop-color="#d9a678"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#grad)"/>
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="rgba(255,255,255,0.35)"/>
+  <text x="120" y="520" font-size="72" font-family="'Segoe UI', Arial, sans-serif" fill="#1f2933" font-weight="700">Bread</text>
+  <text x="120" y="590" font-size="28" font-family="'Segoe UI', Arial, sans-serif" fill="#3f4a5a">Code to Kitchen</text>
+</svg>

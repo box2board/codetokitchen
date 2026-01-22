@@ -12,39 +12,59 @@
     gtag('js', new Date());
     gtag('config', 'G-E5FYYB0L5T');
   </script>
-  <title>Recipe Categories | Code to Kitchen</title>
-  <meta name="description" content="Browse Code to Kitchen recipes by category, from chicken dinners to quick breads.">
+  <title>Recipe Categories – Find Dinner Ideas | Code to Kitchen</title>
+  <meta name="description" content="Browse Code to Kitchen recipe categories to find chicken, pasta, seafood, rice, and bread ideas. Jump into a category and explore the best picks for dinner." />
   <link rel="icon" type="image/svg+xml" href="/assets/img/ck-mark.svg">
   <link rel="canonical" href="https://codetokitchen.com/recipes/categories.html">
-  <meta property="og:title" content="Recipe Categories | Code to Kitchen">
-  <meta property="og:description" content="Browse Code to Kitchen recipes by category, from chicken dinners to quick breads.">
+  <meta property="og:title" content="Recipe Categories – Find Dinner Ideas | Code to Kitchen">
+  <meta property="og:description" content="Browse Code to Kitchen recipe categories to find chicken, pasta, seafood, rice, and bread ideas. Jump into a category and explore the best picks for dinner.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Code to Kitchen">
-  <meta property="og:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
+  <meta property="og:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg">
   <meta property="og:url" content="https://codetokitchen.com/recipes/categories.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Recipe Categories | Code to Kitchen">
-  <meta name="twitter:description" content="Browse Code to Kitchen recipes by category, from chicken dinners to quick breads.">
-  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
+  <meta name="twitter:title" content="Recipe Categories – Find Dinner Ideas | Code to Kitchen">
+  <meta name="twitter:description" content="Browse Code to Kitchen recipe categories to find chicken, pasta, seafood, rice, and bread ideas. Jump into a category and explore the best picks for dinner.">
+  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
   <script defer src="/assets/monetag.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://codetokitchen.com/"
+        "@type": "Organization",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "logo": "https://codetokitchen.com/assets/img/ck-mark.svg"
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Recipe Categories",
-        "item": "https://codetokitchen.com/recipes/categories.html"
+        "@type": "WebSite",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codetokitchen.com/recipes/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://codetokitchen.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Recipe Categories",
+            "item": "https://codetokitchen.com/recipes/categories.html"
+          }
+        ]
       }
     ]
   }
@@ -56,8 +76,16 @@
     <section class="recipe-directory">
       <div class="wrap">
         <h1>Recipe Categories</h1>
-        <p>Pick a category to see matching recipes, then refine with tags or search.</p>
-        <ul id="recipe-categories"></ul>
+        <p>Pick a category to see matching recipes, then narrow with tags or search for a specific ingredient.</p>
+        <ul id="recipe-categories" class="category-list"></ul>
+      </div>
+    </section>
+
+    <section class="recipe-directory">
+      <div class="wrap">
+        <h2>Featured recipes across categories</h2>
+        <p>Need a starting point? These picks highlight the most-loved weeknight recipes across the site.</p>
+        <div class="grid grid-4" data-category-highlights></div>
       </div>
     </section>
   </main>
