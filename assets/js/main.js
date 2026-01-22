@@ -70,6 +70,24 @@ const site = {
       }
     });
   },
+  initNavigationGuard() {
+    document.addEventListener('click', (event) => {
+      if (event.defaultPrevented) return;
+      if (event.button !== 0) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const anchor = event.target.closest('a[href]');
+      if (!anchor) return;
+      if (anchor.hasAttribute('download')) return;
+      const target = anchor.getAttribute('target');
+      if (target && target.toLowerCase() !== '_self') return;
+      const href = anchor.getAttribute('href');
+      if (!href || href.startsWith('#')) return;
+      if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+      const url = new URL(anchor.href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      event.stopImmediatePropagation();
+    }, true);
+  },
   copyIngredients(listId) {
     const list = document.getElementById(listId);
     if (!list) return;
@@ -404,6 +422,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   site.initNav();
   site.initCategoryChips();
   site.initSmoothScroll();
+  site.initNavigationGuard();
   site.initPrintButtons();
   site.initIngredientChecklist();
   site.initRecipeDirectory();
