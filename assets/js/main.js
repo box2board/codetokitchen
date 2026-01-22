@@ -1,5 +1,15 @@
 // /assets/js/main.js
 const site = {
+  placeholderMap: {
+    chicken: '/assets/img/placeholders/chicken.svg',
+    seafood: '/assets/img/placeholders/seafood.svg',
+    pasta: '/assets/img/placeholders/pasta.svg',
+    rice: '/assets/img/placeholders/rice.svg',
+    bread: '/assets/img/placeholders/bread.svg',
+    dessert: '/assets/img/placeholders/dessert.svg',
+    appetizer: '/assets/img/placeholders/appetizer.svg',
+    default: '/assets/img/placeholders/default.svg'
+  },
   async loadIncludes() {
     const slots = document.querySelectorAll('[data-include]');
     if (!slots.length) return;
@@ -166,18 +176,28 @@ const site = {
     return filtered;
   },
   renderRecipeCards(container, recipes) {
-    container.innerHTML = recipes.map((recipe) => `
-      <article class="recipe-card-mini" data-category="${recipe.category}">
-        <img src="${recipe.image}" alt="${recipe.title} image" loading="lazy" width="320" height="200">
-        <div>
-          <p class="card-eyebrow">${recipe.categoryLabel}</p>
-          <h3>${recipe.title}</h3>
-          <p>${recipe.description}</p>
-          <div class="card-meta">${recipe.totalTime} • ${recipe.difficulty}</div>
-          <a class="text-link" href="${recipe.url}">View recipe →</a>
-        </div>
-      </article>
-    `).join('');
+    container.innerHTML = recipes.map((recipe) => {
+      const image = site.getRecipeImage(recipe);
+      const facts = site.getRecipeFacts(recipe);
+      return `
+        <article class="recipe-card" data-category="${recipe.category}">
+          <div class="card-media">
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" width="640" height="480">
+            <span class="category-pill">${recipe.categoryLabel || site.formatLabel(recipe.category)}</span>
+          </div>
+          <div class="card-body">
+            <h3>${recipe.title}</h3>
+            <p class="card-desc">${recipe.description}</p>
+            <div class="card-facts">
+              ${facts.map((fact) => `<span>${fact}</span>`).join('')}
+            </div>
+            <div class="card-cta">
+              <a class="btn" href="${recipe.url}">View Recipe</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
   },
   async initRecipeDirectory() {
     const container = document.getElementById('recipe-directory');
@@ -240,22 +260,62 @@ const site = {
       </li>
     `).join('');
   },
+  async initCategoryHighlights() {
+    const container = document.querySelector('[data-category-highlights]');
+    if (!container) return;
+    const recipes = await site.loadRecipes();
+    const picks = recipes.slice(0, 6);
+    container.innerHTML = picks.map((recipe) => {
+      const image = site.getRecipeImage(recipe);
+      const facts = site.getRecipeFacts(recipe);
+      return `
+        <article class="recipe-card">
+          <div class="card-media">
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" width="640" height="480">
+            <span class="category-pill">${recipe.categoryLabel || site.formatLabel(recipe.category)}</span>
+          </div>
+          <div class="card-body">
+            <h3>${recipe.title}</h3>
+            <p class="card-desc">${recipe.description}</p>
+            <div class="card-facts">
+              ${facts.map((fact) => `<span>${fact}</span>`).join('')}
+            </div>
+            <div class="card-cta">
+              <a class="btn" href="${recipe.url}">View Recipe</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+  },
   async initMoreRecipes() {
     const container = document.querySelector('[data-more-recipes]');
     if (!container) return;
     const currentId = container.dataset.currentId;
     const recipes = await site.loadRecipes();
-    const picks = recipes.filter((recipe) => recipe.id !== currentId).slice(0, 3);
-    container.innerHTML = picks.map((recipe) => `
-      <article class="more-recipe-card">
-        <img src="${recipe.image}" alt="${recipe.title} image" loading="lazy" width="220" height="140">
-        <div>
-          <h3>${recipe.title}</h3>
-          <p>${recipe.description}</p>
-          <a class="text-link" href="${recipe.url}">View recipe →</a>
-        </div>
-      </article>
-    `).join('');
+    const picks = recipes.filter((recipe) => recipe.id !== currentId).slice(0, 4);
+    container.innerHTML = picks.map((recipe) => {
+      const image = site.getRecipeImage(recipe);
+      const facts = site.getRecipeFacts(recipe);
+      return `
+        <article class="recipe-card">
+          <div class="card-media">
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" width="640" height="480">
+            <span class="category-pill">${recipe.categoryLabel || site.formatLabel(recipe.category)}</span>
+          </div>
+          <div class="card-body">
+            <h3>${recipe.title}</h3>
+            <p class="card-desc">${recipe.description}</p>
+            <div class="card-facts">
+              ${facts.map((fact) => `<span>${fact}</span>`).join('')}
+            </div>
+            <div class="card-cta">
+              <a class="btn" href="${recipe.url}">View Recipe</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
   },
   async initRecipeDetail() {
     const container = document.querySelector('[data-recipe-detail]');
@@ -272,6 +332,8 @@ const site = {
     const categoryLabel = recipe.categoryLabel || recipe.category;
     const ingredientListId = `ingredients-list-${recipe.id}`;
     container.dataset.recipeId = recipe.id;
+    const image = site.getRecipeImage(recipe);
+    site.updateRecipeMeta(recipe, image);
     container.innerHTML = `
       <div class="recipe-hero">
         <div>
@@ -283,14 +345,20 @@ const site = {
             <button class="btn btn-secondary" type="button" data-print>Print recipe</button>
           </div>
         </div>
-        <img src="${recipe.image}" alt="${recipe.title} image" loading="lazy" width="220" height="220">
+        <img src="${image.src}" alt="${image.alt}" loading="lazy" width="960" height="720">
       </div>
 
-      <div class="recipe-details">
-        <div class="recipe-detail"><strong>Difficulty</strong>${recipe.difficulty}</div>
-        <div class="recipe-detail"><strong>Category</strong>${categoryLabel}</div>
-        <div class="recipe-detail"><strong>Tags</strong>${recipe.tags.join(', ')}</div>
-      </div>
+      <section class="recipe-facts" aria-label="Recipe facts">
+        <h2>Recipe Facts</h2>
+        <div class="recipe-facts-grid">
+          <div class="recipe-fact"><strong>Prep time</strong>${recipe.prepMinutes} min</div>
+          <div class="recipe-fact"><strong>Cook time</strong>${recipe.cookMinutes} min</div>
+          <div class="recipe-fact"><strong>Total time</strong>${totalTime}</div>
+          <div class="recipe-fact"><strong>Servings</strong>${recipe.servings}</div>
+          <div class="recipe-fact"><strong>Difficulty</strong>${recipe.difficulty}</div>
+          <div class="recipe-fact"><strong>Category</strong>${categoryLabel}</div>
+        </div>
+      </section>
 
       <section class="ingredients" id="ingredients">
         <h2>Ingredients</h2>
@@ -324,7 +392,7 @@ const site = {
       ` : ''}
 
       <section class="more-recipes">
-        <h2>More recipes to try</h2>
+        <h2>You Might Also Like</h2>
         <div class="more-recipes-grid" data-more-recipes data-current-id="${recipe.id}"></div>
       </section>
     `;
@@ -340,8 +408,120 @@ document.addEventListener('DOMContentLoaded', async () => {
   site.initIngredientChecklist();
   site.initRecipeDirectory();
   site.initCategoriesPage();
+  site.initCategoryHighlights();
   site.initMoreRecipes();
   site.initRecipeDetail();
 });
 
 window.copyIngredients = site.copyIngredients;
+
+site.formatLabel = (value = '') => value.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+site.getRecipeImage = (recipe) => {
+  const isMissing = !recipe?.image || recipe.image.includes('ck-mark.svg');
+  const category = recipe?.category || 'default';
+  const src = isMissing ? (site.placeholderMap[category] || site.placeholderMap.default) : recipe.image;
+  const label = recipe?.categoryLabel || site.formatLabel(category) || 'Recipe';
+  return {
+    src,
+    alt: `${recipe.title} (${label}) recipe image`
+  };
+};
+
+site.getRecipeFacts = (recipe) => {
+  const facts = [];
+  if (recipe.prepMinutes != null) facts.push(`Prep ${recipe.prepMinutes} min`);
+  if (recipe.cookMinutes != null) {
+    const label = recipe.cookMinutes === 0 ? 'Total' : 'Cook';
+    const value = recipe.cookMinutes === 0 ? recipe.totalTime : `${recipe.cookMinutes} min`;
+    facts.push(`${label} ${value}`);
+  } else if (recipe.totalTime) {
+    facts.push(`Total ${recipe.totalTime}`);
+  }
+  if (recipe.difficulty) facts.push(recipe.difficulty);
+  return facts;
+};
+
+site.updateRecipeMeta = (recipe, image) => {
+  const title = `${recipe.title} – ${recipe.categoryLabel || site.formatLabel(recipe.category)} Recipe | Code to Kitchen`;
+  document.title = title;
+  const description = recipe.description;
+  const canonicalUrl = `https://codetokitchen.com${recipe.url}`;
+  site.setMetaTag('description', description);
+  site.setLinkTag('canonical', canonicalUrl);
+  site.setMetaProperty('og:title', title);
+  site.setMetaProperty('og:description', description);
+  site.setMetaProperty('og:type', 'article');
+  site.setMetaProperty('og:url', canonicalUrl);
+  if (image?.src) site.setMetaProperty('og:image', `https://codetokitchen.com${image.src}`);
+  site.setMetaTag('twitter:card', 'summary_large_image');
+  site.setMetaTag('twitter:title', title);
+  site.setMetaTag('twitter:description', description);
+  if (image?.src) site.setMetaTag('twitter:image', `https://codetokitchen.com${image.src}`);
+  site.injectRecipeSchema(recipe, image, canonicalUrl);
+};
+
+site.setMetaTag = (name, content) => {
+  if (!name || !content) return;
+  let tag = document.querySelector(`meta[name="${name}"]`);
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute('name', name);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('content', content);
+};
+
+site.setMetaProperty = (property, content) => {
+  if (!property || !content) return;
+  let tag = document.querySelector(`meta[property="${property}"]`);
+  if (!tag) {
+    tag = document.createElement('meta');
+    tag.setAttribute('property', property);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('content', content);
+};
+
+site.setLinkTag = (rel, href) => {
+  if (!rel || !href) return;
+  let tag = document.querySelector(`link[rel="${rel}"]`);
+  if (!tag) {
+    tag = document.createElement('link');
+    tag.setAttribute('rel', rel);
+    document.head.appendChild(tag);
+  }
+  tag.setAttribute('href', href);
+};
+
+site.injectRecipeSchema = (recipe, image, url) => {
+  const existing = document.getElementById('recipe-jsonld');
+  if (existing) existing.remove();
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = 'recipe-jsonld';
+  const json = {
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name: recipe.title,
+    description: recipe.description,
+    author: {
+      '@type': 'Organization',
+      name: 'Code to Kitchen'
+    },
+    recipeYield: `${recipe.servings} servings`,
+    prepTime: `PT${recipe.prepMinutes}M`,
+    cookTime: `PT${recipe.cookMinutes}M`,
+    totalTime: `PT${recipe.totalMinutes || recipe.prepMinutes + recipe.cookMinutes}M`,
+    recipeIngredient: recipe.ingredients,
+    recipeInstructions: recipe.instructions.map((step) => ({
+      '@type': 'HowToStep',
+      text: step
+    })),
+    recipeCategory: recipe.categoryLabel || site.formatLabel(recipe.category),
+    url
+  };
+  if (image?.src) json.image = `https://codetokitchen.com${image.src}`;
+  script.textContent = JSON.stringify(json);
+  document.head.appendChild(script);
+};

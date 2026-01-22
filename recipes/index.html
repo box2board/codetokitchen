@@ -12,39 +12,59 @@
     gtag('js', new Date());
     gtag('config', 'G-E5FYYB0L5T');
   </script>
-  <title>Recipes | Code to Kitchen</title>
-  <meta name="description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
+  <title>Recipe Index – Browse All Recipes | Code to Kitchen</title>
+  <meta name="description" content="Explore every Code to Kitchen recipe in one visual index. Filter by category, tag, or keyword to find quick dinners, breads, and pantry meals for the week." />
   <link rel="icon" type="image/svg+xml" href="/assets/img/ck-mark.svg">
   <link rel="canonical" href="https://codetokitchen.com/recipes/index.html">
-  <meta property="og:title" content="Recipes | Code to Kitchen">
-  <meta property="og:description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
+  <meta property="og:title" content="Recipe Index – Browse All Recipes | Code to Kitchen">
+  <meta property="og:description" content="Explore every Code to Kitchen recipe in one visual index. Filter by category, tag, or keyword to find quick dinners, breads, and pantry meals for the week.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Code to Kitchen">
-  <meta property="og:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
+  <meta property="og:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg">
   <meta property="og:url" content="https://codetokitchen.com/recipes/index.html">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Recipes | Code to Kitchen">
-  <meta name="twitter:description" content="Explore tested, weeknight-friendly recipes with vintage recipe card charm.">
-  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/ck-mark.svg">
+  <meta name="twitter:title" content="Recipe Index – Browse All Recipes | Code to Kitchen">
+  <meta name="twitter:description" content="Explore every Code to Kitchen recipe in one visual index. Filter by category, tag, or keyword to find quick dinners, breads, and pantry meals for the week.">
+  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
   <script defer src="/assets/monetag.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://codetokitchen.com/"
+        "@type": "Organization",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "logo": "https://codetokitchen.com/assets/img/ck-mark.svg"
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Recipes",
-        "item": "https://codetokitchen.com/recipes/index.html"
+        "@type": "WebSite",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codetokitchen.com/recipes/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://codetokitchen.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Recipes",
+            "item": "https://codetokitchen.com/recipes/index.html"
+          }
+        ]
       }
     ]
   }
@@ -56,7 +76,7 @@
     <section class="recipe-directory">
       <div class="wrap">
         <h1>Recipes</h1>
-        <p>Explore AI-inspired recipes tested for real-life cooking. Filter by category, tag, or a quick search.</p>
+        <p>Find your next dinner fast with clean, image-forward cards. Use filters to narrow by category, tag, or keyword.</p>
 
         <div class="directory-controls" role="search">
           <label>
@@ -116,7 +136,7 @@
         </div>
 
         <p id="recipe-results-count" aria-live="polite"></p>
-        <div id="recipe-directory" class="grid"></div>
+        <div id="recipe-directory" class="grid grid-4"></div>
       </div>
     </section>
   </main>

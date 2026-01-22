@@ -13,35 +13,45 @@
     gtag('js', new Date());
     gtag('config', 'G-E5FYYB0L5T');
   </script>
-  <title>Code to Kitchen — Vintage Recipe Cards for Modern Cooks</title>
-  <meta name="description" content="Vintage-style recipe cards for modern home cooks. Browse weeknight dinners, cozy breads, and quick pantry staples." />
+  <title>Easy Weeknight Recipes – Modern Comfort | Code to Kitchen</title>
+  <meta name="description" content="Discover modern, image-forward recipe cards for quick dinners, cozy breads, and pantry wins—browse categories, filter fast, and cook with confidence." />
   <link rel="icon" type="image/svg+xml" href="/assets/img/ck-mark.svg" />
   <link rel="preload" href="/assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="canonical" href="https://codetokitchen.com/" />
-  <meta property="og:title" content="Code to Kitchen — Vintage Recipe Cards for Modern Cooks" />
-  <meta property="og:description" content="Old-fashioned recipe cards with clean, modern UX for busy home cooks." />
+  <meta property="og:title" content="Easy Weeknight Recipes – Modern Comfort | Code to Kitchen" />
+  <meta property="og:description" content="Discover modern, image-forward recipe cards for quick dinners, cozy breads, and pantry wins—browse categories, filter fast, and cook with confidence." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Code to Kitchen" />
   <meta property="og:url" content="https://codetokitchen.com/" />
-  <meta property="og:image" content="https://codetokitchen.com/assets/img/ck-mark.svg" />
+  <meta property="og:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Code to Kitchen — Vintage Recipe Cards for Modern Cooks" />
-  <meta name="twitter:description" content="Old-fashioned recipe cards with clean, modern UX for busy home cooks." />
-  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/ck-mark.svg" />
+  <meta name="twitter:title" content="Easy Weeknight Recipes – Modern Comfort | Code to Kitchen" />
+  <meta name="twitter:description" content="Discover modern, image-forward recipe cards for quick dinners, cozy breads, and pantry wins—browse categories, filter fast, and cook with confidence." />
+  <meta name="twitter:image" content="https://codetokitchen.com/assets/img/placeholders/default.svg" />
   <script defer src="/assets/js/main.js"></script>
   <script defer src="/assets/monetag.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Code to Kitchen",
-    "url": "https://codetokitchen.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://codetokitchen.com/recipes/index.html?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "logo": "https://codetokitchen.com/assets/img/ck-mark.svg"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Code to Kitchen",
+        "url": "https://codetokitchen.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://codetokitchen.com/recipes/index.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -52,15 +62,15 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero-box">
-          <h1>Vintage recipe cards for the modern cook.</h1>
-          <p>Each card keeps it simple: a short intro, an ingredient list you can shop in one trip, and step-by-step instructions—styled like the recipe box your grandma loved.</p>
+          <h1>Modern recipe cards for busy cooks.</h1>
+          <p>Less clutter, more visuals. Get quick facts, clean steps, and the cozy classics you actually cook on weeknights.</p>
           <div class="cta-row">
-            <a class="btn" href="#recipes">Browse recipes</a>
-            <a class="btn btn-ghost" href="/tips.html">Kitchen tips</a>
+            <a class="btn" href="/recipes/index.html">Browse all recipes</a>
+            <a class="btn btn-ghost" href="/recipes/categories.html">Explore categories</a>
+            <a class="btn btn-secondary" href="/tips.html">Kitchen tips</a>
           </div>
         </div>
       </div>
-      <div class="paper-edge" aria-hidden="true"></div>
     </section>
 
     <section id="recipes" class="recipes-section">
@@ -74,155 +84,100 @@
           <button class="chip" data-filter="bread" role="tab">Bread</button>
         </div>
 
-        <div class="grid">
+        <div class="grid grid-4">
           <article class="recipe-card chicken" data-category="chicken">
-            <header class="card-head">
-              <h2>Sheet-Pan Lemon Herb Chicken</h2>
-              <span class="category-tag">Chicken</span>
-            </header>
-            <p class="blurb">Roasted thighs with potatoes & green beans—tangy, garlicky, weeknight-easy.</p>
-            <div class="cols">
-              <section aria-label="Ingredients">
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>Chicken thighs</li>
-                  <li>Baby potatoes</li>
-                  <li>Green beans + carrots</li>
-                  <li>Lemon, garlic, herbs</li>
-                </ul>
-              </section>
-              <section aria-label="Instructions">
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Season chicken + veggies.</li>
-                  <li>Roast at 425°F until crisp.</li>
-                  <li>Finish with lemon juice.</li>
-                </ol>
-              </section>
+            <div class="card-media">
+              <img src="/assets/img/placeholders/chicken.svg" alt="Sheet-Pan Lemon Herb Chicken & Veggies (Chicken) recipe image" loading="lazy" width="640" height="480">
+              <span class="category-pill">Chicken</span>
             </div>
-            <footer class="card-foot">
-              <a class="text-link" href="/recipes/sheet-pan-lemon-herb-chicken.html">Open full card →</a>
-            </footer>
+            <div class="card-body">
+              <h2>Sheet-Pan Lemon Herb Chicken</h2>
+              <p class="card-desc">Roasted thighs with potatoes, carrots, and green beans in a lemon-garlic herb glaze.</p>
+              <div class="card-facts">
+                <span>Prep 15 min</span>
+                <span>Cook 40 min</span>
+                <span>Easy</span>
+              </div>
+              <div class="card-cta">
+                <a class="btn" href="/recipes/sheet-pan-lemon-herb-chicken.html">View Recipe</a>
+              </div>
+            </div>
           </article>
 
           <article class="recipe-card seafood" data-category="seafood">
-            <header class="card-head">
-              <h2>Air-Fryer Honey-Chili Salmon</h2>
-              <span class="category-tag">Seafood</span>
-            </header>
-            <p class="blurb">Sticky-sweet heat with shatter-edged salmon, done in minutes.</p>
-            <div class="cols">
-              <section>
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>Salmon fillets</li>
-                  <li>Honey + soy</li>
-                  <li>Chili crisp</li>
-                  <li>Rice vinegar</li>
-                </ul>
-              </section>
-              <section>
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Brush salmon with glaze.</li>
-                  <li>Air-fry until crisp edges.</li>
-                  <li>Finish with remaining glaze.</li>
-                </ol>
-              </section>
+            <div class="card-media">
+              <img src="/assets/img/placeholders/seafood.svg" alt="Crispy Air-Fryer Honey-Chili Salmon (Seafood) recipe image" loading="lazy" width="640" height="480">
+              <span class="category-pill">Seafood</span>
             </div>
-            <footer class="card-foot">
-              <a class="text-link" href="/recipes/air-fryer-honey-chili-salmon.html">Open full card →</a>
-            </footer>
+            <div class="card-body">
+              <h2>Air-Fryer Honey-Chili Salmon</h2>
+              <p class="card-desc">Sticky-sweet salmon with crisp edges and a quick chili glaze.</p>
+              <div class="card-facts">
+                <span>Prep 10 min</span>
+                <span>Cook 9 min</span>
+                <span>Easy</span>
+              </div>
+              <div class="card-cta">
+                <a class="btn" href="/recipes/air-fryer-honey-chili-salmon.html">View Recipe</a>
+              </div>
+            </div>
           </article>
 
           <article class="recipe-card pasta" data-category="pasta">
-            <header class="card-head">
-              <h2>One-Pot Creamy Tomato Basil Pasta</h2>
-              <span class="category-tag">Pasta</span>
-            </header>
-            <p class="blurb">Pantry pasta where noodles simmer directly in a garlicky tomato broth.</p>
-            <div class="cols">
-              <section>
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>Spaghetti</li>
-                  <li>Crushed tomatoes</li>
-                  <li>Onion + garlic</li>
-                  <li>Cream + basil</li>
-                </ul>
-              </section>
-              <section>
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Simmer pasta in tomato broth.</li>
-                  <li>Stir in cream and basil.</li>
-                  <li>Serve with Parmesan.</li>
-                </ol>
-              </section>
+            <div class="card-media">
+              <img src="/assets/img/placeholders/pasta.svg" alt="One-Pot Creamy Tomato Basil Pasta (Pasta) recipe image" loading="lazy" width="640" height="480">
+              <span class="category-pill">Pasta</span>
             </div>
-            <footer class="card-foot">
-              <a class="text-link" href="/recipes/one-pot-creamy-tomato-basil-pasta.html">Open full card →</a>
-            </footer>
+            <div class="card-body">
+              <h2>One-Pot Creamy Tomato Basil Pasta</h2>
+              <p class="card-desc">Creamy tomato basil pasta that cooks in a single pot for fast cleanup.</p>
+              <div class="card-facts">
+                <span>Prep 10 min</span>
+                <span>Cook 18 min</span>
+                <span>Easy</span>
+              </div>
+              <div class="card-cta">
+                <a class="btn" href="/recipes/one-pot-creamy-tomato-basil-pasta.html">View Recipe</a>
+              </div>
+            </div>
           </article>
 
           <article class="recipe-card rice" data-category="rice">
-            <header class="card-head">
-              <h2>15-Minute Veggie Fried Rice</h2>
-              <span class="category-tag">Rice</span>
-            </header>
-            <p class="blurb">Use day-old rice for best texture; freezer veggies keep it weeknight-easy.</p>
-            <div class="cols">
-              <section>
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>Cooked rice</li>
-                  <li>Eggs</li>
-                  <li>Frozen veggies</li>
-                  <li>Soy + sesame</li>
-                </ul>
-              </section>
-              <section>
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Scramble eggs, set aside.</li>
-                  <li>Crisp rice, add veggies.</li>
-                  <li>Toss with soy + sesame.</li>
-                </ol>
-              </section>
+            <div class="card-media">
+              <img src="/assets/img/placeholders/rice.svg" alt="15-Minute Veggie Fried Rice (Rice) recipe image" loading="lazy" width="640" height="480">
+              <span class="category-pill">Rice</span>
             </div>
-            <footer class="card-foot">
-              <a class="text-link" href="/recipes/fifteen-minute-veggie-fried-rice.html">Open full card →</a>
-            </footer>
+            <div class="card-body">
+              <h2>15-Minute Veggie Fried Rice</h2>
+              <p class="card-desc">A quick skillet dinner using day-old rice and freezer veggies.</p>
+              <div class="card-facts">
+                <span>Prep 15 min</span>
+                <span>Total 15 min</span>
+                <span>Easy</span>
+              </div>
+              <div class="card-cta">
+                <a class="btn" href="/recipes/fifteen-minute-veggie-fried-rice.html">View Recipe</a>
+              </div>
+            </div>
           </article>
 
           <article class="recipe-card bread" data-category="bread">
-            <header class="card-head">
-              <h2>No-Knead Skillet Garlic Bread</h2>
-              <span class="category-tag">Bread</span>
-            </header>
-            <p class="blurb">Chewy-crisp edges, garlicky butter, great with pasta or soups.</p>
-            <div class="cols">
-              <section>
-                <h3>Ingredients</h3>
-                <ul>
-                  <li>All-purpose flour</li>
-                  <li>Instant yeast</li>
-                  <li>Butter + garlic</li>
-                  <li>Olive oil</li>
-                </ul>
-              </section>
-              <section>
-                <h3>Instructions</h3>
-                <ol>
-                  <li>Rest dough until doubled.</li>
-                  <li>Bake in hot skillet.</li>
-                  <li>Brush with garlic butter.</li>
-                </ol>
-              </section>
+            <div class="card-media">
+              <img src="/assets/img/placeholders/bread.svg" alt="No-Knead Skillet Garlic Bread (Bread) recipe image" loading="lazy" width="640" height="480">
+              <span class="category-pill">Bread</span>
             </div>
-            <footer class="card-foot">
-              <a class="text-link" href="/recipes/no-knead-skillet-garlic-bread.html">Open full card →</a>
-            </footer>
+            <div class="card-body">
+              <h2>No-Knead Skillet Garlic Bread</h2>
+              <p class="card-desc">Chewy-crisp garlic bread baked in a cast-iron skillet.</p>
+              <div class="card-facts">
+                <span>Prep 15 min</span>
+                <span>Cook 22 min</span>
+                <span>Easy</span>
+              </div>
+              <div class="card-cta">
+                <a class="btn" href="/recipes/no-knead-skillet-garlic-bread.html">View Recipe</a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
